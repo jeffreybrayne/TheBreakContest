@@ -1,0 +1,55 @@
+.page_notice_drop {
+    background: #FFFFFF;
+}
+
+/* @title Form Message Box */
+/* @help Form messages will be displayed withing the Form Message box */
+.page_notice {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* @title Form Message Text */
+/* @help Formats the message text as shown in the Form Message Box */
+.form_notice {
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+/* @title Form Notice */
+/* @help Background color of Form Notice messages */
+.notice {
+    background-color: #AADDFF !important;
+    color: #000000;
+}
+
+/* @title Form Warning */
+/* @help Background color of Form Warning messages */
+.warning {
+    background-color: #FFDD00 !important;
+    color: #000000;
+}
+
+/* @title Form Error */
+/* @help Background color of Form Error messages */
+.error {
+    background-color: #FFDD00 !important;
+    color: #000000;
+}
+
+/* @title Form Success */
+/* @help Background color of Form Success messages */
+.success {
+    background-color: #CCFF99 !important;
+    color: #000000;
+}
+
+/* @title Field Error */
+/* @help Background color of a form field if the contents are in error */
+.field-hilight {
+    background-color: #FFDD00;
+}

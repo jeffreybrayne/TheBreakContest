@@ -1,0 +1,34 @@
+.form_radio {
+}
+/* @title Radio Option */
+/* @help Format for Radio form field options */
+.form_radio_option {
+    display:inline;
+    padding-right:32px;
+}
+/* @title Textarea */
+/* @help Format for Textarea form input fields */
+.form_textarea {
+    color:#999;
+    font:11px;
+    width:75%;
+    height:100px;
+    padding:5px; /* @ignore */
+    margin:0 2px; /* @ignore */
+    background-color:#212121;
+    border:solid 1px #282828;
+}
+/* @title Textarea Focus */
+/* @help Class applied to a textarea field when the field is selected for input. */
+textarea:focus {
+    border:solid 1px #282828;
+    background-color: #333;
+    color:#CCC;
+}
+
+/* @title Checkbox */
+/* @help Class applied to a checkbox form field */
+.form_checkbox {
+    font-size:16px;
+    margin:3px;
+}

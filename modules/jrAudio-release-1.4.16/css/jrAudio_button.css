@@ -1,0 +1,338 @@
+/*
+ * jrAudio Button Player CSS
+ */
+
+.button_player div.jp-audio {
+
+	/* Edit the font-size to counteract inherited font sizing.
+	 * Eg. 1.25em = 1 / 0.8em */
+	font-size:1.25em; /* 1.25em for testing in site pages */ /* No parent CSS that can effect the size in the demos ZIP */
+	font-family:Verdana, Arial, sans-serif;
+	line-height:1.6;
+	color: #666;
+	border: none;
+	background-color:transparent;
+	position:relative;
+}
+.button_player div.jp-audio {
+}
+
+.button_player div.jp-interface {
+	position: relative;
+	background-color:transparent;
+}
+
+.button_player div.jp-audio div.jp-type-single div.jp-interface {
+}
+.button_player div.jp-audio div.jp-type-playlist div.jp-interface {
+}
+
+/* @group CONTROLS */
+
+.button_player div.jp-controls-holder {
+	clear: both;
+	margin:0 auto;
+	position:relative;
+	top:-8px; /* This negative value depends on the size of the text in jp-currentTime and jp-duration */
+}
+
+.button_player div.jp-interface ul.jp-controls {
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	overflow:hidden;
+}
+
+.button_player div.jp-audio ul.jp-controls {
+}
+
+.button_player div.jp-interface ul.jp-controls li {
+	display:inline;
+	float:left;
+}
+
+.button_player div.jp-interface ul.jp-controls a {
+	display:block;
+}
+.button_player a.jp-play,
+.button_player a.jp-pause {
+}
+
+.button_player a.jp-stop, a.jp-previous, a.jp-next {
+	margin-top:6px;
+}
+
+/* @end */
+
+/* @group progress bar */
+
+.button_player div.jp-progress {
+	overflow:hidden;
+	background-color: #ddd;
+}
+.button_player div.jp-audio div.jp-progress {
+	position: absolute;
+	top:32px;
+	height:15px;
+}
+.button_player div.jp-audio div.jp-type-single div.jp-progress {
+	left:110px;
+	width:186px;
+}
+.button_player div.jp-audio div.jp-type-playlist div.jp-progress {
+	left:166px;
+	width:130px;
+}
+
+.button_player div.jp-seek-bar {
+	width:0;
+	height:100%;
+	cursor: pointer;
+}
+.button_player div.jp-play-bar {
+	width:0;
+	height:100%;
+}
+/* @end */
+
+/* @group volume controls */
+
+
+.button_player a.jp-mute,
+.button_player a.jp-unmute,
+.button_player a.jp-volume-max {
+	width:18px;
+	height:15px;
+	margin-top:12px;
+}
+
+.button_player div.jp-audio div.jp-type-single a.jp-mute,
+.button_player div.jp-audio div.jp-type-single a.jp-unmute {
+	margin-left: 210px;
+}
+
+.button_player div.jp-audio div.jp-type-playlist a.jp-mute,
+.button_player div.jp-audio div.jp-type-playlist a.jp-unmute {
+	margin-left: 154px;
+}
+
+.button_player div.jp-audio a.jp-volume-max {
+	margin-left: 56px;
+}
+
+.button_player div.jp-volume-bar {
+	position: absolute;
+	overflow:hidden;
+	width:46px;
+	height:5px;
+	cursor: pointer;
+}
+.button_player div.jp-audio div.jp-volume-bar {
+	top:37px;
+	left:330px;
+}
+
+.button_player div.jp-volume-bar-value {
+	width:0;
+	height:5px;
+}
+
+/* @end */
+
+/* @group current time and duration */
+
+.button_player div.jp-audio div.jp-time-holder {
+	position:absolute;
+	top:50px;
+}
+.button_player div.jp-audio div.jp-type-single div.jp-time-holder {
+	left:110px;
+	width:186px;
+}
+.button_player div.jp-audio div.jp-type-playlist div.jp-time-holder {
+	left:166px;
+	width:130px;
+}
+
+.button_player div.jp-current-time,
+.button_player div.jp-duration {
+	width:60px;
+	font-size:.64em;
+	font-style:oblique;
+}
+.button_player div.jp-current-time {
+	float: left;
+	display:inline;
+}
+.button_player div.jp-duration {
+	float: right;
+	display:inline;
+	text-align: right;
+}
+
+/* @end */
+
+/* @group playlist */
+
+.button_player div.jp-title {
+	font-weight:bold;
+	text-align:center;
+}
+
+.button_player div.jp-title,
+.button_player div.jp-playlist {
+	display: none;
+}
+.button_player div.jp-type-single div.jp-title,
+.button_player div.jp-type-playlist div.jp-title,
+.button_player div.jp-type-single div.jp-playlist {
+	border-top:none;
+}
+.button_player div.jp-title ul,
+.button_player div.jp-playlist ul {
+	list-style-type:none;
+	margin:0;
+	padding:0 20px;
+	font-size:.72em;
+}
+
+.button_player div.jp-title li {
+	padding:5px 0;
+	font-weight:bold;
+}
+.button_player div.jp-playlist li {
+	padding:5px 0 4px 20px;
+	border-bottom:1px solid #eee;
+}
+
+.button_player div.jp-playlist li div {
+	display:inline;
+}
+
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
+
+.button_player div.jp-type-playlist div.jp-playlist li:last-child {
+	padding:5px 0 5px 20px;
+	border-bottom:none;
+}
+.button_player div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
+	list-style-type:square;
+	list-style-position:inside;
+	padding-left:7px;
+}
+.button_player div.jp-type-playlist div.jp-playlist a {
+	color: #333;
+	text-decoration: none;
+}
+.button_player div.jp-type-playlist div.jp-playlist a:hover {
+	color:#0d88c1;
+}
+.button_player div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+	color:#0d88c1;
+}
+
+.button_player div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove {
+	float:right;
+	display:inline;
+	text-align:right;
+	margin-right:10px;
+	font-weight:bold;
+	color:#666;
+}
+.button_player div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove:hover {
+	color:#0d88c1;
+}
+.button_player div.jp-type-playlist div.jp-playlist span.jp-free-media {
+	float:right;
+	display:inline;
+	text-align:right;
+	margin-right:10px;
+}
+.button_player div.jp-type-playlist div.jp-playlist span.jp-free-media a{
+	color:#666;
+}
+.button_player div.jp-type-playlist div.jp-playlist span.jp-free-media a:hover{
+	color:#0d88c1;
+}
+.button_player span.jp-artist {
+	font-size:.8em;
+	color:#666;
+}
+
+/* @end */
+.button_player div.jp-jplayer audio,
+.button_player div.jp-jplayer {
+	width:0;
+	height:0;
+}
+
+.button_player div.jp-jplayer {
+	background-color: #000000;
+}
+
+/* @group TOGGLES */
+
+/* The audio toggles are nested inside jp-time-holder */
+
+.button_player ul.jp-toggles {
+	list-style-type:none;
+	padding:0;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.button_player div.jp-audio .jp-type-single ul.jp-toggles {
+	width:25px;
+}
+.button_player div.jp-audio .jp-type-playlist ul.jp-toggles {
+	width:55px;
+	margin: 0;
+	position: absolute;
+	left: 325px;
+	top: 50px;
+}
+
+.button_player ul.jp-toggles li {
+	display:block;
+	float:right;
+}
+
+.button_player ul.jp-toggles li a {
+	display:block;
+	width:25px;
+	height:18px;
+	text-indent:-9999px;
+	line-height:100%; /* need this for IE6 */
+}
+
+/* @end */
+
+/* @group NO SOLUTION error feedback */
+
+.button_player .jp-no-solution {
+	position:absolute;
+	width:32px;
+	margin-left:-202px;
+	left:50%;
+	top: 10px;
+
+	padding:5px;
+	font-size:.8em;
+	background-color: transparent;
+	border: none;
+	color:#000;
+	display:none;
+}
+
+.button_player .jp-no-solution a {
+	color:#000;
+}
+
+.button_player .jp-no-solution span {
+	font-size:1em;
+	display:block;
+	text-align:center;
+	font-weight:bold;
+}
+
+/* @end */

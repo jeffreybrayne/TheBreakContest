@@ -1,0 +1,414 @@
+MediaPro Skin Changelog
+
+Version 1.4.6:
+ - Change: Changed footer contact link to a mailto link if the custom from module is not active.
+ - Added: Added social icons to the footer
+ - Change: Changed skin settings to have separate sections or tabs.
+
+Version 1.4.5:
+ - Bug Fix: Fixed layout on pages with side by side images.
+ - Bug Fix: Fixed bottom ad to use the correct skin dir.
+
+Version 1.4.4:
+ - Bug Fix: Fixed the menu button to be on the same line as the logo image and still work on mobile devices.
+
+Version 1.4.3:
+ - Fix: Added a check for the private notes module around the contact us link.
+ - Template Files:
+   ------------------------------------------------------
+    Modified: footer.tpl
+   ------------------------------------------------------
+
+Version 1.4.2:
+ - Fix: Moved Ajax calls from the jrMediaPro.js file to their own templates.
+ - Fix: Fixed spacing issue in the side site news section of the home page.
+ - Template Files:
+   ------------------------------------------------------
+    Modified: blogs.tpl, news.tpl, groups.tpl, index.tpl,
+              discussions.tpl, galleries.tpl, artists.tpl,
+              members.tpl, members_list.tpl, side_home.tpl,
+              and site_news.tpl
+   ------------------------------------------------------
+ - JS Files:
+   ------------------------------------------------------
+    Modified: jrMediaPro.js
+   ------------------------------------------------------
+
+Version 1.4.1:
+ - Addition: Added 3 small calendars to the events page.
+ - Change: Changed form_button class to make the text center in the button.
+ - Change: Replaced chart plays variable with the chart_count variable.
+ - Template Files:
+   ------------------------------------------------------
+    Modified: events.tpl, music_chart_row.tpl,
+              video_chart_row.tpl
+   ------------------------------------------------------
+ - CSS Files:
+   ------------------------------------------------------
+    Modified: core_form_button.css
+   ------------------------------------------------------
+
+Version 1.4.0:
+ - Added: Group and Ning specific support added
+ - Fix: Fixed music page to show album price for a single song if the price is not set but the album price is set.
+ - Update: Updated slide menu to new version
+ - Moved logo down on mobile view.
+ - Template Files Modified:
+   ------------------------------------------------------
+    header.tpl          footer.tpl
+    music_row.tpl
+   ------------------------------------------------------
+ - New Version of Javascript file:
+   ------------------------------------------------------
+    contrib/slidebars/slidebars.min.js
+   ------------------------------------------------------
+
+Version 1.3.7:
+ - Added: Profile custom logo support
+ - Template Files Modified:
+   ------------------------------------------------------
+    header.tpl
+   ------------------------------------------------------
+
+Version 1.3.6:
+ - Fix: Fixed recently rated box on the profile page
+
+Version 1.3.5:
+ - Fix: Fixed music and video lists to show PayPal button if being used instead of FoxyCart.
+ - Template Files Modified/Added:
+   ------------------------------------------------------
+    music_row.tpl               music_chart_row.tpl
+    videos_row.tpl              video_chart_row.tpl
+   ------------------------------------------------------
+
+Version 1.3.4:
+ - Fix: Fixed the hide/show toggle button for the front page Carousel.
+ - New: Added a mobile menu for profile pages.
+ - Update: New site mobile menu.
+ - Update: Arranged gallery page to fit better with the side.
+ - Update: Fixed other layout issues.
+ - Update: Changed text colors to just 3 different colors.
+
+ - Config Files Modified:
+   ------------------------------------------------------
+    config.php
+   ------------------------------------------------------
+
+ - JS Files Modified:
+   ------------------------------------------------------
+    jrMediaProLight.js
+   ------------------------------------------------------
+
+ - CSS Files Modified:
+   ------------------------------------------------------
+    mobile_core.css                 core_action.css
+    core_html.css                   core_admin_menu.css
+    core_base.cs                    core_doc.css
+    core_form_button.css            core_header.css
+    core_list.css                   core_page.css
+    core_profile.css                core_site.css
+    core_slider.css                 core_table.css
+    core_tabs.css                   core_text.css
+   ------------------------------------------------------
+
+ - Template Files Modified:
+   ------------------------------------------------------
+    profile_header.tpl              header.tpl
+    footer.tpl                      galleries.tpl
+    gallery_list.tpl                articles.tpl
+    side_home.tpl                   side_videos.tpl
+    blogs_list.tpl                  vimeo_videos.tpl
+    youtube_videos.tpl              index_featured_song.tpl
+    index_top_artists_song.tpl      index.tpl
+   ------------------------------------------------------
+
+ - Files Added:
+   ------------------------------------------------------
+    profile_menu_mobile.tpl         slidebar.css
+    header_menu_desktop.tpl         header_menu_mobile.tpl
+    menu.png
+   ------------------------------------------------------
+
+ - Directories/Files Added:
+   ------------------------------------------------------
+    contrib/slidebars/licnese.txt
+    contrib/slidebars/slidebars.min.js
+   ------------------------------------------------------
+
+Version 1.3.3:
+ - Added: Added a Jamroom 180x150 banner instead of using the skins icon in the 180x150 Ad space.
+ - File Modified:
+   ------------------------------------------------------
+    side_home.tpl               side_members.tpl
+    side_news.tpl               side_news_story.tpl
+    side_videos.tpl
+   ------------------------------------------------------
+
+Version 1.3.2:
+ - Update: Centered profile image on the profile page for mobile devices when logged out.
+ - File Modified:
+   ------------------------------------------------------
+    profile_header.tpl
+   ------------------------------------------------------
+
+Version 1.3.1:
+ - Update: Centered profile image on the profile page for mobile devices.
+ - Change: Changed profile name layout for mobile devices.
+ - Added: Added System Updates link to the ACP drop down menu.
+ - File Modified:
+   ------------------------------------------------------
+    mobile_core.css             profile_header.tpl
+    us-EN.php                   es-ES.php
+    header.tpl
+   ------------------------------------------------------
+
+Version 1.3.0:
+ - Update: Centered profile image on the profile page.
+ - File Modified:
+   ------------------------------------------------------
+    core_profile.css
+   ------------------------------------------------------
+
+Version 1.2.17:
+ - Added more editable sections skins CSS admin panel area.
+
+Version 1.2.16:
+ - Update to use smarty3 syntax for javascript wrappers
+
+Version 1.2.15:
+ - Update: Updated page-table-jumper style.
+ - File Modified:
+   ------------------------------------------------------
+    core_table.css
+   ------------------------------------------------------
+
+Version 1.2.14:
+ - Fix: Fixed the Stations and Channels pages to not show the text Rating when rating module is not active.
+ - Templates Modified:
+    ------------------------------------------------------
+     channels.tpl               channels_row.tpl
+     channels_playlist.tpl      top_channels_row.tpl
+     stations.tpl               stations_row.tpl
+     station_playlist.tpl       top_stations_row.tpl
+    ------------------------------------------------------
+
+Version 1.2.13:
+ - Update: Added check to hide Recommend, Ratings and Ads when modules are disabled or hidden by a skin config setting.
+ - Templates Modified:
+    ------------------------------------------------------
+     side_home.tpl              side_news_story.tpl
+     header.tpl                 music.tpl
+     news.tpl                   videos.tpl
+     vimeo_videos.tpl           youtube_videos.tpl
+     sound_cloud.tpl            events.tpl
+    ------------------------------------------------------
+
+Version 1.2.12:
+ - Update: Changed version number to match MediaProLight.
+ - Files Modified:
+    ------------------------------------------------------
+     changelog.txt              include.php
+    ------------------------------------------------------
+
+Version 1.2.11:
+ - Update: Updated all skin images to use jrCore_image function instead of img tags.
+ - Update: Added a check on the profile page to see if the jrFollower module is active.
+ - Templates Modified:
+    ------------------------------------------------------
+     header.tpl                  index.tpl
+     index_featured_song.tpl     index_top_artist_song.tpl
+     index_slider_song.tpl       index_top_singles_rating_row.tpl
+     index_top_singles_row.tpl   index_channel.tpl
+     index_radio.tpl
+
+     music_chart_row.tpl         music_row.tpl
+     song_chart_row.tpl          video_chart_row.tpl
+
+     side_home.tpl               side_members.tpl
+     side_music.tpl              side_videos.tpl
+     side_charts_row.tpl         side_music_charts.tpl
+     side_news.tpl               side_news_story.tpl
+     site_feeds.tpl
+
+     channels_row.tpl            top_channels_row.tpl
+     channels_playlist.tpl
+
+     stations_row.tpl            top_stations_row.tpl
+     station_playlist.tpl
+
+     profile_footer.tpl
+    ------------------------------------------------------
+
+Version 1.2.10:
+ - Fix: Fixed Ad areas to not show when skin config settings Hide Ads is checked.
+    ------------------------------------------------------
+    Templates Modified: side_members.tpl
+    ------------------------------------------------------
+
+Version 1.2.9:
+ - Update: Updated config variables to use the correct skin.
+    ------------------------------------------------------
+    Templates Modified: about.tpl  footer.tpl
+                        side_videos.tpl side_videos_chart.tpl
+    ------------------------------------------------------
+
+Version 1.2.8:
+ - Change: updated CSS for new actions styles.
+    ------------------------------------------------------
+    CSS File Modified: core_action.css
+    ------------------------------------------------------
+
+Version 1.2.7:
+ - Update: side_members.tpl setup to match MediaPro Dark templates
+ - Bug Fix: Fixed URL on more button for the Featured Artist in the side_home.tpl file.
+ - Bug Fix: Fixed URL for linked image and video name in the side_videos.tpl file.
+ - Update: Updated profiles.tpl file to use a pagebreak.
+ - Update: Removed replace modifier for the More button in the profiles_row.tpl file since it is not really needed.
+ - Update: Removed replace modifier for the Title in the account.tpl file.
+ - Bug Fix: Fixed pagebreak in account_list.tpl file.
+
+Version 1.2.6:
+ - Update: Version updated to match MediaPro Light.
+
+Version 1.2.5:
+ - Update: Added padding to the site blog page list entries.
+ - Fixed:  Site Blog page Read More, Title and Image URL to use _item_id instead of title_url.
+ - Update: Added padding to the user blog page list entries.
+   ------------------------------------------------------
+   Templates Modified: blogs_list.tpl    blogs_row.tpl
+                       site_blogs_list.tpl
+   ------------------------------------------------------
+
+Version 1.2.4:
+ - Bug Fix: Gallery URLs could point to incorrect gallery if multiple galleries had the same name
+ - Change: update to use new Title Support in ACP
+
+Version 1.2.3:
+ - Update: Modified side templates to not show charts listing if the jrCharts module is disabled
+   ------------------------------------------------------
+   Templates Modified: channels.tpl    side_home.tpl
+                       side_videos.tpl  side_video_charts_row.tpl
+   ------------------------------------------------------
+
+Version 1.2.2:
+ - Modified main menu to accommodate for disabled modules
+   ------------------------------------------------------
+   Templates Modified: header.tpl
+   ------------------------------------------------------
+
+Version 1.2.1:
+ - Fixed issue where the last item in the Carousel would not play music when the play button was clicked.
+   ------------------------------------------------------
+   Modified JS File: jrMediaPro.js
+   ------------------------------------------------------
+
+Version 1.2.0:
+ - Added an account page to go with the profiles page when clicking the more button.
+   ------------------------------------------------------
+   Templates Modified: profiles_row.tpl
+   Templates Created:  account.tpl  account_list.tpl
+                       account_row.tpl
+   ------------------------------------------------------
+
+Version 1.0.11:
+ - Updated next/prev page button auto scroll code.
+   ------------------------------------------------------
+   Templates Modified: side_home.tpl    side_charts_row.tpl
+                       index.tpl    index_top_singles_row.tpl
+                       index_new_artists.tpl
+   ------------------------------------------------------
+
+Version 1.0.10:
+ - Fixed truncated artist bios from messing up the layout if HTML is in the bio.
+ - Added truncate to Song title and Artist name in the Top Singles section to prevent layout from getting messed up.
+ - Added bottom border to Top 10 Section to separate the list entries.
+   ------------------------------------------------------
+   Templates Modified: index_featured.tpl    index_top_artists_row.tpl
+                       index_top_singles_row.tpl
+   ------------------------------------------------------
+   ------------------------------------------------------
+   CSS Files Modified: core_site.css
+   ------------------------------------------------------
+
+Version 1.0.9:
+ - Updated CSS files to fix action text colors.
+   ------------------------------------------------------
+   CSS Files Modified: core_profile.css     core_action.css
+   ------------------------------------------------------
+
+Version 1.0.8:
+ - Updated CSS urls to allow for override by image upload override in the ACP
+
+Version 1.0.7:
+ - Fixed images on site news section on the home page.
+   ------------------------------------------------------
+   CSS Files Modified: core_site.css
+   ------------------------------------------------------
+   ------------------------------------------------------
+   Templates Modified:
+            site_news.tpl      side_news.tpl
+   ------------------------------------------------------
+
+Version 1.0.6:
+ - Fixed Dasboard link from not showing to site admins.
+   ------------------------------------------------------
+   Templates Modified:
+            header.tpl      profile_header.tpl
+   ------------------------------------------------------
+
+ - Fixed news/bog page when more than one ID was entered into the blog_profile field of the skins settings.
+   ------------------------------------------------------
+   Templates Modified:
+        blogs_list.tpl      news.tpl
+        news_list.tpl       news_story.tpl
+        side_news.tpl
+   ------------------------------------------------------
+
+
+Version 1.0.5:
+ - Updated Blog/News titles to use item ID for showing the item on the News Story page instead of the title url variable.
+
+Version 1.0.4:
+ - Updated mobile CSS styles.
+ - Updated pagination style.
+ - Added scroll feature to pagination that loads into a div via Ajax.
+   ------------------------------------------------------
+   JS Files Modified: jrMediaPro.js
+   ------------------------------------------------------
+   ------------------------------------------------------
+   CSS Files Modified: mobile_core.css, tablet_core.css
+   ------------------------------------------------------
+   ------------------------------------------------------
+   Templates Modified: articles_row.tpl, artists.tpl, artists_row.tpl, blogs.tpl, blogs_list.tpl, blogs_row.tpl,
+   channels.tpl, channels_row.tpl, top_channels_row.tpl, events_row.tpl, galleries.tpl, galleries_row.tpl,
+   hot_artists_row.tpl, index.tpl, index_top_singles_row.tpl, members.tpl, members_list.tpl, members_row.tpl,
+   mucic_chart_row.tpl, music_row.tpl, news.tpl, news_list.tpl, side_charts_row.tpl, side_home.tpl, side_news.tpl,
+   site_blogs_list.tpl, sound_cloud_row.tpl, stations.tpl, stations_row.tpl, top_stations_row.tpl, video_chart_row.tpl,
+   videos_row.tpl, vimeo_videos_row.tp, youtube_videos_row.tpl
+   ------------------------------------------------------
+
+Version 1.0.3:
+ - Fixed events row displaying different link url's for the same event
+ - Modified slider to make images fit better.
+ - Modified Top 10 Artists to make names fite better.
+ - Fixed Profiles page if the admin quota is the same as the artist.
+   ------------------------------------------------------
+   Files Modified: index.tpl, index_top_artists_song.tpl,
+                   index_featured_list.tpl, index_slider.tpl,
+                   index_featured_song.tpl,index_top_artist_row.tpl,
+                   profiles.tpl,core_flexslider.css, mobile_core.css,
+                   core_skin.css, core_html.css
+   ------------------------------------------------------
+
+Version 1.0.2:
+ - Fixed Skin Settings link in the header.tpl file to use the active skin variable.
+
+Version 1.0.1:
+ - Updated main menu documentation/faq and forum links to use a
+   separate skin setting field so they can be set to any profile.
+   ------------------------------------------------------
+   Files Modified: header.tpl, config.php and readme.html
+   ------------------------------------------------------
+
+ Version 1.0.0:
+ - First release.

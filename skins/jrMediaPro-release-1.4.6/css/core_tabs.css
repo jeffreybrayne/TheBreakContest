@@ -1,0 +1,207 @@
+/* Tab Bar */
+/* @title Tab Bar Holder */
+/* @help This is the holder for the tab bar */
+.page_tab_bar_holder {
+    width:100%;
+    background-color:transparent;
+    border-bottom-width:0;
+    border-bottom-style:solid;
+    border-bottom-color:#282828;
+}
+
+.page_tab_bar_spacer {
+    height:10px;
+    background-color:transparent;
+}
+.page_tab_bar {
+    padding-left:16px;
+}
+/* @title Page Tab */
+/* @help This is the tab for the tab bar */
+.page_tab {
+    background-color:#111;
+    float:left;
+    list-style:none;
+    margin-left:2px; /* @ignore */
+    border: solid #282828 1px;
+    color:#999;
+    text-decoration:none;
+    text-transform:capitalize;
+    font:14px Verdana,sans-serif;
+    text-align:center;
+    cursor:pointer;
+}
+/* @title Page Tab Hover */
+/* @help This is the tab hover for the tab bar */
+.page_tab:hover {
+    background-color:#FF9900;
+    color:#000;
+    text-decoration:none;
+}
+/* @title Page Tab Hover Link */
+/* @help This is the tab link hover for the tab bar */
+.page_tab:hover a {
+    color:#000;
+    text-decoration:none;
+}
+/* @title Page Tab Link */
+/* @help This is the tab URL link for the tab bar */
+.page_tab a {
+    padding:5px 10px; /* @ignore */
+    display:block;
+    color:#0099FF;
+    text-decoration:none;
+}
+.page_tab_first {
+    margin-left:0;
+}
+.page_tab_last {
+}
+/* @title Page Tab Active */
+/* @help This is the active tab */
+.page_tab_active {
+    background:#111;
+    color:#666;
+    border: solid #282828 1px;
+    margin-bottom:-2px;
+}
+/* @title Tab Active Hover */
+/* @help This is the active tab hover effect */
+.page_tab_active:hover {
+    background:#040505;
+    color:#9F3;
+    text-decoration:none;
+}
+.page_tab_active:hover a {
+    color:#0099FF;
+    text-decoration:none;
+}
+/* @title Tab Active Link */
+/* @help This is the active tab URL link */
+.page_tab_active a {
+    color:#FF9900;
+}
+
+/* @title Tab Active Hover Link */
+/* @help This is the active tab URL link hover effect */
+.page_tab_active a:hover {
+    color:#0099FF;
+}
+/* Tabs */
+.menu_tab{
+    width:0;
+    white-space:nowrap;
+    margin:0 6px 0 6px;
+}
+/* @title Side Tabs */
+/* @help This is the tabs for the side section on the home page. */
+.p_choice {
+    float:left;
+    display:inline-block;
+    margin-bottom:-1px;
+    background-color:#111;
+    font-size:12px;
+    color:#999;
+    text-transform:capitalize;
+    padding:4px 10px 4px 10px;
+    vertical-align:middle;
+    border-top:1px solid #282828;
+    border-right:1px solid #282828;
+    border-bottom:1px solid #282828;
+    border-left:1px solid #282828;
+    border-radius: 4px 4px 0 0;
+}
+/* @title Side Active Tab */
+/* @help This is the active tabs for the side section on the home page. */
+.p_choice_active {
+    float:left;
+    display:inline-block;
+    background-color:#040505;
+    margin-bottom:-1px;
+    border-top:1px solid #282828;
+    border-right:1px solid #282828;
+    border-bottom:1px solid #040505;
+    border-left:1px solid #282828;
+    border-radius: 4px 4px 0 0;
+    font-size:12px;
+    color:#FF9900;
+    text-transform:capitalize;
+    padding:4px 10px 4px 10px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+/* @title Side Tab Link */
+/* @help This is the link for the tabs on the side section of the home page. */
+.p_choice a {
+    text-decoration:none;
+    color:#0099FF;
+}
+/* @title Side Tab Hover */
+/* @help This is the hover effect for the tabs on the side section of the home page.*/
+.p_choice:hover {
+    background-color:#040505;
+    color:#FF9900;
+    cursor:pointer;
+}
+/* @title Side Active Hover */
+/* @help This is the active tab hover effect on the side section of the home page.*/
+.p_choice_active:hover {
+    margin-bottom:-1px;
+    background-color:#040505;
+    color:#0099FF;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.spacer {width:6px;font-size:8px;}
+.divider {height:1px;}
+.spacer2 {height: 2px;}
+.spacer10 {height: 10px;}
+.spacer20 {height: 20px;}
+
+/* --- HEAD - 180 MENU --------- */
+
+#nav-180 {margin:0; padding:0;}
+#nav-180 ul {margin:0;padding:0; list-style-type: none;}
+#nav-180 ul li {float:left;}
+
+#nav-180 ul li a {
+    text-decoration: none;
+    background-color:#111;
+    color: #999;
+    font-size: 15px;
+    line-height: 26px;
+    float: left;
+    margin: 0 10px -1px 0;
+    text-transform:capitalize;
+    padding: 1px 20px 0 20px;
+    border-top:solid 1px #282828;
+    border-right:solid 1px #282828;
+    border-bottom:solid 1px #282828;
+    border-left:solid 1px #282828;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#nav-180 li a:hover {
+    background-color:#040505;
+    color: #FF9900;
+}
+
+#nav-180-current {
+    text-decoration: none;
+    background-color:#040505;
+    color: #666;
+    font-size: 15px;
+    text-transform:capitalize;
+    line-height: 26px;
+    float: left;
+    margin: 0 10px -1px 0;
+    padding: 1px 20px 0 20px;
+    border-top:solid 1px #282828;
+    border-right:solid 1px #282828;
+    border-bottom:solid 1px #040505;
+    border-left:solid 1px #282828;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}

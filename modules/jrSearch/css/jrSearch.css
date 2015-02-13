@@ -1,0 +1,16 @@
+/* @title Search Text Block */
+/* @help Controls the block holding the search field on module index */
+.block_search {
+    float: right;
+    white-space: nowrap;
+    text-align: right;
+    width: 50%;
+}
+
+/* @title Search Text Input */
+/* @help Format for Text Input search element on module indexes */
+.form_text_search {
+    width: 50%;
+    font-style: italic;
+    text-transform: capitalize;
+}

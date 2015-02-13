@@ -1,0 +1,57 @@
+/* @title List Row */
+/* @help The List Row is the row section for ranking lists */
+.list_row, .list_col {
+    padding: 6px;
+    background-color: #CCCCCC;
+    color: #000000;
+}
+
+/* @title List Image */
+/* @help The List Image is for the images in the ranking list */
+.list_image {
+    padding: 6px;
+    background-color: #CCCCCC;
+    color: #000000;
+}
+
+/* @title List Highlight */
+/* @help The List Highlight is for the highlighted text in a ranking list */
+.list_hl {
+    background-color: #FFCC00;
+    color: #000000;
+}
+
+/* @title List Item */
+/* @help The List Item class is for the content in a  ranking list */
+.item {
+    background-color: #F9F9F9;
+    padding: 12px;
+    margin: 12px auto;
+    color: #000000;
+}
+
+.item a {
+    color: #336699;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+/* @title Blogpost Link Color */
+/* @help The color for links users include in their blog posts */
+.blogpost p a {
+    color: #336699;
+    text-decoration: none;
+}
+
+.blogpost p a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.add_to_cart_section {
+    border-radius: 3px;
+}

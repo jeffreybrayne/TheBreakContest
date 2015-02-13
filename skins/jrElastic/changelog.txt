@@ -1,0 +1,72 @@
+Elastic Skin changelog
+
+Version 1.2.3:
+ - Bug Fix: Fixed the menu button to be on the same line as the logo image and still work on mobile devices.
+
+Version 1.2.2:
+ - Change: Site Wrapper added to the STYLE tab so background color can be changed.
+
+Version 1.2.1:
+ - Fix: Fixed recently rated box on the profile page
+
+Version 1.2.0:
+ - New: Updates to improve skin layout and make it cleaner and easier to customize
+
+Version 1.1.5:
+ - Change: Removed unused images and updated included readme file
+
+Version 1.1.4:
+ - Update: Centered profile image on the profile page for mobile devices when logged out.
+ - File Modified:
+   ------------------------------------------------------
+    profile_header.tpl
+   ------------------------------------------------------
+
+Version 1.1.3:
+ - Update: Centered profile image on the profile page for mobile devices.
+ - Added: Added System Updates link to the ACP drop down menu.
+ - File Modified:
+   ------------------------------------------------------
+    mobile_core.css             en-US.php
+    header.tpl
+   ------------------------------------------------------
+
+Version 1.1.2:
+ - Added more editable sections skins CSS admin panel area.
+
+ Version 1.1.1:
+ - Update to use smarty3 syntax for javascript wrappers
+
+Version 1.1.0:
+ - Change: CSS updates in the header to make it a bit narrower + stay fixed at the top
+ - Change: "Timeline" menu option will now show for profiles
+ - Change: Profile sidebar has been narrrowed a bit to give more room for profile lists/items
+ - Change: CSS Updates and tweaks to make things look nicer
+
+Version 1.0.9:
+ - Change: Updated profile_header.tpl to work properly with jrAction module
+
+Version 1.0.8:
+ - Update: Added a check on the profile page to see if the jrFollower module is active.
+
+Version 1.0.7:
+ - Update to use new Title Support in ACP
+
+Version 1.0.6:
+ - Updated CSS urls to allow for override by image upload override in the ACP
+
+ Version 1.0.5:
+ - Updated mobile CSS styles: mobile_core.css, tablet_core.css
+
+Version 1.0.4:
+ - Change: Visual updates to index page to add newest blogs section and make image slider a bit wider
+
+Version 1.0.3:
+ - Fixed Skin Settings link in the header.tpl file to use the active skin variable.
+
+Version 1.0.2:
+ - Profile index timeline for profile owners is no longer cached and will update properly
+
+Version 1.0.0:
+ - Adding new Changelog
+ - Initial Release

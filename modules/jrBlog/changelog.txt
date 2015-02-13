@@ -1,0 +1,52 @@
+Profile Blog module changelog
+
+Version 1.1.1:
+ - New: jrShareThis_facebook_open_graph.tpl file included to customize ShareThis OG metadata
+ - Change: nl2br removed from jrCore_format_string blacklist - now handled by System Core
+
+Version 1.1.0:
+ - New: Inserted Page Breaks in Blog text now results in pagination on detail page
+
+Version 1.0.13:
+ - Change: Output spacing changes removed (functionality is now in the Jamroom Core)
+
+Version 1.0.12:
+ - New: Search box on Blog index page to search only blog items
+ - Change: Spacing between paragraphs in blog made less to look better
+
+Version 1.0.11:
+ - Bug Fix: Page Title not being set correctly on blog index (/blog)
+
+Version 1.0.10:
+ - Change: timeline template now uses jrCore_strip_html instead of strip_tags
+
+Version 1.0.9:
+ - Fix: removed the extra closing link tag in the item_index.tpl
+
+Version 1.0.8:
+ - Change: removing the extra link in to the profile from the text generated for twitter
+
+Version 1.0.7:
+ - New: The Blog List Image can now be deleted from the Update Blog screen on mouse over the image
+
+Version 1.0.6:
+ - Bug Fix: error messages may not show properly on Blog Update if an error is encountered
+
+Version 1.0.5:
+ - New: Welcome to Jamroom blog created on new install
+
+Version 1.0.4:
+ - Change: Template updates for new timeline updates
+
+Version 1.0.3:
+ - Bug Fix: HTML in blog entry could break search results
+
+Version 1.0.2:
+ - Template updates to support new Item Action Buttons
+
+Version 1.0.1:
+ - Template updates to support new Item Detail features
+ - Adding new Changelog
+
+Version 1.0.0:
+ - Initial Release

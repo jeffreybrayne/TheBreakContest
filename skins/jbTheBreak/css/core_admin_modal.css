@@ -1,0 +1,30 @@
+/* @title Modal Overlay */
+/* @help The background overlay for the Modal window */
+#simplemodal-overlay {
+    background-color:#000000;
+    cursor:wait;
+}
+/* @title Modal Window */
+/* @help The Modal window */
+#modal_window {
+    background-color:#040505;
+    border-width:2px;
+    border-style:solid;
+    border-color:#282828;
+    overflow:auto;
+}
+/* @title Modal Updates */
+/* @help The Modal window updates */
+#modal_updates {
+    color:#CCC;
+    font-size:12px;
+    padding:8px;
+    margin-left:12px;
+    overflow:auto;
+}
+/* @title Modal Spinner */
+/* @help The Modal window loading image */
+#modal_spinner {
+    vertical-align:middle;
+    margin-right:8px;
+}

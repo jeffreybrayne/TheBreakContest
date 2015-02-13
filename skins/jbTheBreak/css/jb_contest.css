@@ -1,0 +1,11 @@
+/* @title Contest Styles */
+/* @help Styles for the contest.tpl and contest_header.tpl file */
+
+/* THE BREAK STYLES */
+/********************/
+
+#contestHeader {
+    background: none repeat scroll 0 0 #000;
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}

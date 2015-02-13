@@ -1,0 +1,1 @@
+Your {$system_name} Account has been activated!

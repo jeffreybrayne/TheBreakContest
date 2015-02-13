@@ -1,0 +1,6 @@
+
+(2015-02-07T20:30:08+00:00.0.05357100 : 0)-(mem: 25427968)-(pid: 36978)-(ip: 71.168.124.236)-(user: admin)-(uri: jeffreybrayne.com/break/marketplace/install_item/module/jrAudio/license=5FqtIGvE9s8pW3P9/__ajax=1)
+|Query Error: Table 'jr_jrcore_log' already exists|
+
+(2015-02-07T20:30:08+00:00.0.05357100 : 0)-(mem: 25427968)-(pid: 36978)-(ip: 71.168.124.236)-(user: admin)-(uri: jeffreybrayne.com/break/marketplace/install_item/module/jrAudio/license=5FqtIGvE9s8pW3P9/__ajax=1)
+|CREATE TABLE jr_jrcore_log (log_id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, log_created INT(11) UNSIGNED NOT NULL DEFAULT '0', log_priority VARCHAR(8) NOT NULL DEFAULT 'inf', log_ip VARCHAR(16) NOT NULL DEFAULT '', log_text VARCHAR(2048) NOT NULL DEFAULT '', INDEX log_priority (log_priority)) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci|

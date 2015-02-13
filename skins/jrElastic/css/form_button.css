@@ -1,0 +1,76 @@
+/* @title Form Button */
+/* @help Format for Form Buttons */
+.form_button {
+    background-color: #FFFFFF;
+    color: #484848;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 13px;
+    height: 28px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-color: #7F7F7F;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: middle;
+
+}
+
+/* @title Follow Button*/
+/* @help Override for border-radius on follow button */
+.follow_button {
+    border-radius: 3px;
+}
+
+.upload_button {
+    line-height: 28px;
+}
+
+/* @title Form Button Hover */
+/* @help Format for Form Buttons when the mouse is hovered over the button */
+.form_button:hover {
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.form_button_disabled {
+    color: #A4A4A4;
+    border: solid 1px #AFAFAF;
+}
+
+.form_button_disabled:hover {
+    color: #A4A4A4;
+    background: #F0F0F0;
+}
+
+.form_button a, .form_button_anchor a, .form_button_anchor:hover a {
+    text-decoration: none;
+}
+
+.sprite_icon {
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-color: #7F7F7F;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.sprite_icon:hover {
+    background-color: #EEEEEE;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.sprite_icon_hilighted {
+    background-color: #FFCC00;
+}

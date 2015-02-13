@@ -1,0 +1,41 @@
+/* Jamroom 5 Gallery Module CSS */
+.jr_gallery_row a {
+    text-decoration:none;
+}
+.jr_gallery_row a:hover {
+    text-decoration:none;
+}
+.jrgallery_update_div {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    padding:12px;
+    margin:6px 12px 6px 3px;
+    border:1px solid #999;
+    text-align:center;
+}
+.jrgallery_update_div:hover {
+    background-color:#AAA;
+}
+.jrgallery_update_image {
+    border:1px solid #999;
+    margin:1px;
+    margin-bottom:6px;
+}
+.jrgallery_update_button {
+    font-size:12px;
+    width:60px;
+    margin:2px;
+}
+
+.jrgallery_update_button:hover {
+    cursor:pointer;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    .jr_gallery_row {
+        width:90%;
+    }
+}

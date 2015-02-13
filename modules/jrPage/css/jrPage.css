@@ -1,0 +1,18 @@
+/* Jamroom 5 Page Module CSS */
+
+/* @title Page Body */
+/* @help Defines the font size for the main page body content */
+.jrpage_body {
+    font-size:16px;
+}
+
+.jrpage_body p {
+    padding:3px 12px;
+}
+
+.page_actions {
+    position:absolute;
+    top:12px;
+    right:12px;
+    display:none;
+}

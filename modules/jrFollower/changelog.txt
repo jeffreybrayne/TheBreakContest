@@ -1,0 +1,44 @@
+Profile Followers module changelog
+
+Version 1.3.1:
+ - Change: Deleting a follower now takes you back to the profile followers list
+
+Version 1.3.0:
+ - New: "Followers" has been moved to the Profile Menu
+
+Version 1.2.0:
+ - New: "followed_by" jrCore_list flag for jrProfile to list profiles followed by a user_id or group of user_id's
+ - Change: Email templates updated to include followed profile name for new followers
+ - Change: Email links to browse now include profile id and name for better multi-profile use
+
+Version 1.1.1:
+ - Bug Fix: Approve Followers checkbox still showing in some cases when module was disabled
+
+Version 1.1.0:
+ - New: Follower Integrity Check tool to validate Profile Follower counts
+ - Bug Fix: Approve Followers checkbox in Profile Settings still showing when module is disabled
+ - Bug Fix: profile follower count key not being updated properly on follower create/delete
+
+Version 1.0.6:
+ - Change: Template updates for new action timeline update
+
+Version 1.0.5:
+ - Bug Fix: Pending follower counts not being cached correctly
+ - Bug Fix: Profile module load order could cause "include_followed" jrCore_list parameter to not function correctly
+
+Version 1.0.4:
+ - Bug Fix: Action entry was not being created when a pending follower was approved
+ - Change: Pending followers have the "approve" button highlighted in the followers list
+
+Version 1.0.3:
+ - Bug Fix: Follower Browser pagination jumper was not working correctly
+
+Version 1.0.2:
+ - Change added a listener for 'action_status' to add follower and following stats to {jrAction_stats} template function.
+
+Version 1.0.1:
+ - Bug Fix: "Next Page" link from Followers -> Browse was not working correctly
+ - Adding new Changelog
+
+Version 1.0.0:
+ - Initial Release

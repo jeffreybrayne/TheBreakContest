@@ -1,0 +1,125 @@
+Marketplace module changelog
+
+Version 1.2.11:
+ - Bug Fix: "Check for Updates" not always checking skin versions correctly
+ - Bug Fix: Clicking on "Already Installed" button for skin not redirecting to installed skin
+
+Version 1.2.10:
+ - Bug Fix: Downgrading to an older module version in Release Archive may not update module version
+
+Version 1.2.9:
+ - Change: button for 'already installed' now links to the modules /info page
+ - Bug Fix: possible FATAL PHP error in module/skin rebase on systems with Xcache installed
+ - Bug Fix: 'Update All' with an invalid license now continues with updating other items
+
+Version 1.2.8:
+ - Change: System Update without an active marketplace system now redirects to marketplace config
+ - Change: Improved help messages for form fields and error responses from the marketplace system
+
+Version 1.2.7:
+ - Bug Fix: Module and Skin updates now work on PHP installs with XCache configured incorrectly
+
+Version 1.2.6:
+ - Change: Update to latest Core provided cache reset functions
+
+Version 1.2.5:
+ - Change: System Update tool now shows the Skin title instead of the directory name
+
+Version 1.2.4:
+ - Bug Fix: Daily Updates available could show updates for skins that were already updated
+
+Version 1.2.3:
+ - Bug Fix: Updates available for skins not showing correctly in daily updates available email
+ - Bug Fix: "Purchase License" link i System Updates shows item already installed
+
+Version 1.2.2:
+ - New: "installed_module", "installed_skin", "updated_module" and "updated_skin" event triggers
+ - Bug Fix: Available Updates email not listing skin names correctly
+
+Version 1.2.1:
+ - Bug Fix: Invalid License error when updating a non-active skin
+
+Version 1.2.0:
+ - New: Update Check global setting to check for systme updates during daily maintenance and notify admins
+ - Change: minor updates to Marketplace template style to improve the layout
+
+Version 1.1.4:
+ - Bug Fix: PHP 5.5+ running OPcache may not reset cache properly so module will appear to not update
+
+Version 1.1.3:
+ - Bug Fix: Modules and Skins with multiple dependencies may not show in System Update properly
+
+Version 1.1.2:
+ - Bug Fix: Table Layout was broken in the Reload Modules or Skins tool
+
+Version 1.1.1:
+ - Bug Fix: extra closing tag before Cancel button when updating System Core module
+
+Version 1.1.0:
+ - New: Page Jumper in Browse Marketplace for modules, skins, bundles and installed
+ - New: Reload Modules or Skins too now shows modules and skins in alphabetical order
+ - Change: "History" marketplace tab moved to Tools -> Install History
+ - Bug Fix: Layout in System Archive tool was broken for some skin entries
+
+Version 1.0.19:
+ - Bug Fix: Installation of free bundles could fail with an "invalid license" error
+
+Version 1.0.18:
+ - Bug Fix: Updates to browse.tpl to fix screenshot lightbox issue
+
+Version 1.0.17:
+ - Change: Added system checks to the core 'System Check' page to make sure credentials exist for the default marketplace.
+
+Version 1.0.16:
+ - Change: Low Disk Space warning only shows if less than 100mb of space left on drive
+
+Version 1.0.15:
+ - Change: Updated to use lightbox2 instead of lightbox
+ - Change: Tab text changed to fit better on tablets displays
+
+Version 1.0.14:
+ - Bug Fix: invalid license error in Update All from System Updates would show a "close" button
+
+Version 1.0.13:
+ - Change: Additional cache resets on module and skin updates
+
+Version 1.0.12:
+ - Change: Set max_execution time during "install all updates" to prevent script from exiting before it finishes
+
+Version 1.0.11:
+ - Bug Fix: Remove Archive for modules with point release larger than 9 returning "invalid version" error
+ - Bug Fix: Skin icons were not showing properly in the Release Archive tool
+
+Version 1.0.10:
+ - Bug Fix: Active Javascript and CSS are rebuilt on module and active skin update/reload
+
+Version 1.0.9:
+ - Bug Fix: Beta Channel items are now properly highlighted with a different color than Stable
+ - Bug Fix: Unable to update to a beta version of an item if a stable version of the item existed
+
+Version 1.0.8:
+ - Bug Fix: New version of Stripe Checkout was truncating the price from the purchase and install button
+
+Version 1.0.7:
+ - Bug Fix: Update Skin now returns to System Update instead of Skin Info screen
+
+Version 1.0.6:
+ - Bug Fix: "Update All" not working correctly for Jamroom installed in sub directory
+ - Change: System Update will now show "Purchase License" with link instead of "No License" for unlicensed module
+
+Version 1.0.5:
+ - Bug Fix: Full Super Pack bundle install failing due to URL issue in installer
+
+Version 1.0.4:
+ - Bug Fix: Reloading module/skin that encountered a license error would refresh to invalid page
+
+Version 1.0.3:
+ - Bug Fix: "Update All" modal window will now properly report any errors encountered updating an item
+ - Bug Fix: Javascript error when closing Update All modal window
+ - If an Item does not have an associated license with it, "No License" is shown instead of Update button (as the update will fail)
+
+Version 1.0.2:
+ - System Update now properly validates new module meta data on upgrade - this fixes a bug where the module may show as having not updated even though it actually did.
+
+Version 1.0.0:
+ - Initial release

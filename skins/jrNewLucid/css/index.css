@@ -1,0 +1,92 @@
+.blog-index-header {
+    /* DO NOT use any padding, border, margin, etc. in this class */
+    background-color: #F9F9F9;
+}
+
+.blog-index-title {
+    font-size: 24px;
+}
+
+.blog-index-title a {
+    color: #000000;
+}
+
+.blog-index-text {
+    padding: 20px 40px 80px 20px;
+    font-size: 16px;
+    line-height: 26px;
+    border-top: 1px solid #FEC72E;
+}
+
+.blog-index-text a {
+    text-decoration: none;
+}
+
+.blog-index-text a:hover {
+    text-decoration: none;
+}
+
+.blog-archive-header {
+    border-bottom: 1px solid #FEC72E;
+}
+
+.blog-archive-entry {
+    display: block;
+    padding: 0 0 12px 0;
+}
+
+.blog-archive-img {
+    border-radius: 0;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.blog-archive-title {
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.blog-archive-title a {
+    color: #333333;
+}
+
+.blog-archive-title a:hover {
+    text-decoration: none;
+}
+
+.blog-archive-byline {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 11px;
+}
+
+.blog-archive-byline a {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+.blog-index-read-more {
+    float: left;
+    display: block;
+    width: 110px;
+    background-color: #FEC72E;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.blog-index-comments {
+    float: left;
+    margin-left: 12px;
+    display: block;
+    width: 110px;
+    background-color: #FFE497;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    border-radius: 2px;
+}

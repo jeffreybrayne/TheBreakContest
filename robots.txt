@@ -1,0 +1,9 @@
+# Jamroom 5 Default robots.txt
+
+User-agent: *
+Disallow: /modules/
+Disallow: /skins/
+Disallow: /license.txt
+Disallow: /install.txt
+Disallow: /install.php
+Disallow: /repair.php.html

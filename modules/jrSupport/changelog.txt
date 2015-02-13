@@ -1,0 +1,8 @@
+Support Center module
+
+Version 1.0.1:
+ - Change: Skin dropdown selection will now show SKin Title instead of skin directory (if set by skin)
+ - Change: cosmetic fix to show profile name properly on support options page
+
+Version 1.0.0:
+ - Initial Release

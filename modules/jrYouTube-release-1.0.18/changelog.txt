@@ -1,0 +1,59 @@
+YouTube module changelog
+
+Version 1.0.18:
+ - New: Tool to import mass YouTube videos to a specified profile
+
+Version 1.0.17:
+ - Change: Width of the player is now 100% of the div, height is aspect ratio 16:9
+
+Version 1.0.16:
+ - New: Search and browsing added to the Editor Embedded Media tab
+ - New: Search box on index page to search only YouTube videos
+
+Version 1.0.15:
+ - Change: module now allows the use of youtube_id="BKorP55Aqvg" to embed videos not in the datastore.
+
+Version 1.0.14:
+ - Change: new "item_embed.tpl" template that works with new Embed module
+
+Version 1.0.13:
+ - Change: Updated to work with Editor Embedded Media module and TinyMCE 4
+ - Bug Fix: Fix for incorrect error result function used on a couple views
+
+Version 1.0.12:
+ - Bug Fix: fix invalid stream count variables
+
+Version 1.0.11:
+ - Change: Support for youtu.be URL added for URL Scanner
+
+Version 1.0.10:
+ - Bug Fix: URL Scan template now properly works under https
+
+Version 1.0.9:
+ - New: Log Entry created for invalid YouTube response on integrity check
+
+Version 1.0.8:
+ - New: Daily maintenance option added to remove invalid YouTube videos
+ - Bug Fix: Search was incorrectly replacing spaces with underscores
+
+Version 1.0.7:
+ - Bug Fix: iframe embed not working when site is on SSL in Search
+ - Change: Default page count set to 5 instead of 10
+
+Version 1.0.6
+ - New: jrPoll and jrUrlScan listeners added/modified
+
+Version 1.0.5:
+ - Template updates to support new Item Action Buttons
+
+Version 1.0.4:
+ - Big Fix: YouTube videos embedded in https pages were not showing on some browsers
+
+Version 1.0.3:
+ - Bug fixes
+
+Version 1.0.2:
+ - Added action support when creating multiple items via the search form
+
+version 1.0.1:
+ - Adding new Changelog

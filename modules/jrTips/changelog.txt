@@ -1,0 +1,7 @@
+User Tips Module changelog
+
+Version 1.0.1:
+ - Bug Fix: Tour could till start on Skin template even with Tours disabled (due to caching)
+
+Version 1.0.0:
+ - Initial Release

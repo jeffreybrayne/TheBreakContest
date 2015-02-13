@@ -1,0 +1,9 @@
+Jamroom ujEditorCodeMirror changelog
+
+Version 1.0.0:
+ - Change: Updated source.html to improve cursor handling
+
+Version 0.9.9:
+ - New: Added changelog
+ - Bug Fix: Included missing addon directory in CodeMirror
+

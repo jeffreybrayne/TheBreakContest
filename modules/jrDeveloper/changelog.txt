@@ -1,0 +1,68 @@
+Developer Tools module changelog
+
+Version 1.3.5:
+ - Bug Fix: Update to ensure that the first character of a cloned skin name is a letter
+
+Version 1.3.4:
+ - Bug Fix: Customized language strings were not being copied properly to a cloned skin
+
+Version 1.3.3:
+ - Bug Fix: Customized templates in cloned skin may not have $_conf variables renamed
+
+Version 1.3.2:
+ - New: Clone Skin now properly copies customized Templates, CSS and Images to new skin
+
+Version 1.3.1:
+ - New: Clone image over-rides when the skin is cloned.
+
+Version 1.3.0:
+ - New: "Reset System" tool to reset a system back to how it was after a fresh install
+ - Bug Fix: possible FATAL PHP error in module/skin rebase on systems with Xcache installed
+ - New: Skin name now also changes when the skin is cloned.
+ - New: Templates altered via the ACP now also get cloned to the new skin.
+
+Version 1.2.4:
+ - Bug Fix: Improperly configured xcache PHP module could cause rebase function to fail
+ - New: added a way to export Form Designer fields added to modules.
+
+Version 1.2.3:
+ - Change: Updated bundled Adminer script to version 4.1.0
+ - Change: Package Skin tool now uses skin title if set
+
+Version 1.2.2:
+ - New: "delete all zip files" button in module/skin packager to delete existing zip files
+ - Change: Rebase now resets PHP 5.5+ OPcache if configured
+
+Version 1.2.1:
+ - Bug Fix: Rebasing modules could result in a white screen making the site inaccessible
+
+Version 1.2.0:
+ - New: added a way to rebase the versions of modules back onto their base module directory.
+ - New: added a way to rebase the versions of skins back onto their base skin directory.
+
+Version 1.1.3:
+ - Bug Fix: function names in include.php not being named correctly on Skin Clone
+
+Version 1.1.2:
+ - Bug Fix: Clone Skin returning error that skin name must be 3 characters or longer
+
+Version 1.1.1:
+ - New: If a module or skin is missing the "license" meta data field, an error message is shown.
+ - Bug Fix: Packaged modules or skins without a license field were defaulting to MPL.
+
+Version 1.1.0:
+ - New: Support for "license" field in skin/module meta data to auto select license when building.
+
+Version 1.0.4:
+ - Bug Fix: hitting enter caused the form to submit in locations with one text field only.
+ - Bug Fix: skins can be cloned to names with less than 3 characters.
+
+Version 1.0.3:
+ - Added new MIT and Freeware Licenses
+
+Version 1.0.1:
+ - Now uses system media dir (media/0/0) to store module/skin packaged ZIP files
+ - Added validation of Developer Prefix to Global Config
+
+Version 1.0.0:
+ - Intitial Release

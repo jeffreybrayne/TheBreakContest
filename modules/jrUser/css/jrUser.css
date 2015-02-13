@@ -1,0 +1,47 @@
+.online_status_table {
+    display:table;
+    width:100%;
+}
+
+/* @title Online Status Image */
+/* @help Cell class for image area in Online Status for an individual User */
+.online_status_image {
+    display:table-cell;
+    width:10%;
+    padding:6px;
+}
+
+/* @title Online Status User */
+/* @help Cell class for user name area in Online Status for an individual User */
+.online_status_user {
+    display:table-cell;
+    width:80%;
+    vertical-align:middle;
+    padding:2px 6px;
+}
+
+/* @title Online Status User Anchor */
+/* @help Cell class for user name area in Online Status for an individual User */
+.online_status_user a {
+    color:#000000;
+}
+
+/* @title User is Online */
+/* @help Class for small ONLINE box that shows when the user is actually online */
+.online_status_online {
+    background-color:#ccff99;
+    color:#000000;
+    padding:4px;
+    display:inline-block;
+    width:100%;
+}
+
+/* @title User is Offline */
+/* @help Class for small OFFLINE box that shows when the user is not online */
+.online_status_offline {
+    color:#000000;
+    padding:4px;
+    display:inline-block;
+    width:100%;
+}
+

@@ -1,0 +1,40 @@
+/* @title Index Styles */
+/* @help Styles for the index.tpl file */
+
+/* THE BREAK STYLES */
+/********************/
+
+#theBreak {
+    background: none repeat scroll 0 0 #fff;
+    border: 3px solid #990000;
+    border-radius: 12px;
+    margin: 2em auto 4em;
+    width: 166%;
+}
+
+#theBreakContestIconLinks {
+    background: none repeat scroll 0 0 #000;
+    border: 1px solid #990000;
+    border-radius: 12px;
+    margin-top: 2em;
+}
+
+.logo {
+    height: 140px;
+    margin-top: 1em;
+}
+
+/* GENERIC CLASSES */
+/*******************/
+
+.margin-bottom-1 {
+	margin-bottom: 1em;
+}
+
+.margin-bottom-2 {
+	margin-bottom: 2em;
+}
+
+.margin-bottom-3 {
+	margin-bottom: 3em;
+}

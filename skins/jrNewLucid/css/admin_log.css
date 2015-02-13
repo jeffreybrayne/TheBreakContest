@@ -1,0 +1,27 @@
+/* @title Info Log */
+/* @help Background color for Informational (INF) Log entries */
+.log-inf {
+    background-color: transparent;
+    text-align: left;
+}
+
+/* @title Minor Log */
+/* @help Background color for Minor (MIN) Log entries */
+.log-min {
+    background-color: #FFCC00;
+    text-align: left;
+}
+
+/* @title Major Log */
+/* @help Background color for Major (MAJ) Log entries */
+.log-maj {
+    background-color: #FF9900;
+    text-align: left;
+}
+
+/* @title Critical Log */
+/* @help Background color for Critical (CRI) Log entries */
+.log-cri {
+    background-color: #FF6600;
+    text-align: left;
+}

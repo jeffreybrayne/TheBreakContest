@@ -1,0 +1,595 @@
+/* Modal Window */
+
+* {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* @title Modal Overlay background */
+/* @help Defines the background color used when a modal window is opened */
+#simplemodal-overlay {
+    background-color: #000000;
+    cursor: wait;
+}
+
+#modal_window {
+    display: none;
+    overflow: auto;
+}
+
+/* @title Modal Update Text */
+/* @help Text used for individual update lines in an activity update modal window */
+#modal_updates {
+    color: #000000;
+    font-size: 12px;
+    font-family: monospace;
+    padding: 8px 16px; /* @ignore */
+    overflow: auto;
+}
+
+#modal_indicator {
+    display: none;
+    float: right;
+    position: relative;
+    top: 60px;
+    right: 20px;
+}
+
+.search_area_left {
+    padding-bottom: 12px !important;
+}
+
+.search_area_right {
+    padding-bottom: 12px !important;
+}
+
+/* File form field */
+.jrcore_file_detail {
+    position: relative;
+    width: 76%;
+    padding: 6px 10px !important;
+    margin: 0 0 12px 2px !important;
+    font-size: 12px !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    border-radius: 5px;
+}
+
+.jrcore_file_detail_left {
+    width: 2%;
+    vertical-align: middle;
+}
+
+.jrcore_file_detail_right {
+    width: 98%;
+    text-align: left;
+}
+
+.jrcore_file_title {
+    width: 90px;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+}
+
+.at_link a {
+    color: #000099;
+    text-decoration: none;
+}
+
+.at_link a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Menu Accordion */
+.accordion {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.accordion a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.accordion a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+dt {
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+dt a {
+    color: #000000;
+}
+
+dd {
+    padding: 3px 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+#item-holder {
+    margin-right: 9px;
+}
+
+#item-list {
+    width: 100%;
+    display: table;
+    overflow: scroll;
+    margin: 9px;
+    margin-right: 0;
+    padding: 6px;
+}
+
+.item-row {
+    width: 100%;
+    display: table-row;
+    cursor: pointer;
+    height: 42px;
+    background: #DDDDDD;
+}
+
+.item-row-active {
+    background: #FFFFFF;
+}
+
+.item-row:hover {
+    background: #FFFFFF;
+}
+
+.item-icon {
+    display: table-cell;
+    padding: 3px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.item-entry {
+    width: 100%;
+    display: table-cell;
+    padding: 6px;
+    font-size: 14px;
+    color: #000000;
+    vertical-align: middle;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.item-enabled {
+    display: table-cell;
+    padding-right: 6px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.item-disabled {
+    display: table-cell;
+    color: #000000;
+    background: #FFCC00;
+    font-size: 11px;
+    padding: 6px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+.item-active {
+    display: table-cell;
+    background: #CCFF99;
+    font-size: 11px;
+    padding: 6px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+#item-work {
+    background: #DDDDDD;
+}
+
+#error_log {
+    font-family: Monaco, "Lucida Console", monospace;
+    width: 100%;
+    max-width: 840px;
+    padding: 6px;
+    font-size: 10px;
+    overflow: scroll;
+}
+
+#debug_log {
+    font-family: Monaco, "Lucida Console", monospace;
+    width: 100%;
+    max-width: 840px;
+    padding: 6px;
+    font-size: 10px;
+    overflow: scroll;
+    white-space: pre-line;
+}
+
+/* DataStore Browser */
+.ds_browser_key {
+    width: 250px;
+    display: inline-block;
+    text-align: right;
+}
+
+.ds_browser_value {
+    text-align: left;
+    padding-left: 3px;
+}
+
+#ds_browser_new_key {
+    width: 120px;
+}
+
+/* Template Editor */
+.form_editor_holder {
+    text-transform: none;
+    width: 94%;
+    z-index: 25000;
+    height: 100%;
+}
+
+.form_template {
+    text-transform: none;
+    width: 875px;
+}
+
+.form_template_editor {
+    text-transform: none;
+    height: 600px;
+}
+
+.php_Notice {
+}
+
+.php_Warning {
+    color: #FF9900;
+}
+
+.php_Fatal, .php_Parse {
+    color: #FF0000;
+}
+
+.log-inf {
+    text-align: left;
+}
+
+.log-min {
+    background: #FFFF99;
+    text-align: left;
+}
+
+.log-maj {
+    background: #FF9933;
+    text-align: left;
+}
+
+.log-cri {
+    background: #FF6633;
+    text-align: left;
+}
+
+.style-box {
+    width: 80%;
+    margin-top: 9px;
+    padding: 6px;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #DDDDDD;
+    font-size: 12px;
+    float: left;
+}
+
+.style-box-hilight {
+    border-left-color: #FFCC00;
+}
+
+.style-reset {
+    position: absolute;
+    top: 5px;
+    right: 32px;
+}
+
+.style-input {
+    width: 175px;
+}
+
+.style-select {
+    width: 185px;
+}
+
+.style-color {
+    width: 24px;
+    height: 16px;
+    margin: 0 6px;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+}
+
+.style-label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin: 6px;
+    padding: 0;
+}
+
+.CodeMirror {
+    background: #FFFFFF;
+    padding: 6px;
+    font-size: 12px;
+    border: solid 1px #CCCCCC;
+    overflow: scroll;
+}
+
+.fullscreen {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    opacity: 1;
+}
+
+#jqp {
+    background: #FAFAFA;
+    width: 360px;
+    padding: 6px 2px 2px 6px;
+    border: solid 1px #7F7F7F;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 99;
+}
+
+#jqp h2 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+#jqp ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    zoom: 1;
+}
+
+#jqp ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+#jqp ul li {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+#jqp ul li a {
+    display: block;
+    width: 13px;
+    height: 13px;
+    text-decoration: none;
+    text-indent: -100000px;
+    outline: 0;
+    border: solid 1px #7F7F7F;
+}
+
+#jqp ul li a:hover {
+    border-color: #000000;
+}
+
+/* popup calendar */
+/* Calendar container div */
+.gldp-default {
+    float: left;
+    background-color: #CCCCCC !important;
+    font-size: 1em !important;
+    border: solid 1px #888888;
+    position: relative;
+    z-index: 100;
+}
+
+/* Table style */
+.gldp-default table {
+    border-spacing: 1px;
+    border-collapse: inherit;
+}
+
+/* Default row height */
+.gldp-default tr {
+    line-height: 28px;
+}
+
+/* Default style of cell */
+.gldp-default td {
+    margin: 0;
+    padding: 0;
+    width: 33px;
+    text-align: center;
+}
+
+/* Previous and Next arrows */
+.gldp-default-prevnext {
+    color: #222222;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Month Year title */
+.gldp-default-monyear {
+    color: #222222;
+    font-size: 1em !important;
+    font-weight: bold;
+}
+
+/* Days of the week (Sun, Mon, ...) */
+.gldp-default-dow {
+    background-color: #FFCC00;
+    color: #000000;
+    font-size: 1em !important;
+    font-weight: bold;
+}
+
+/* Selectable days */
+.gldp-default-day {
+    background-color: #FFFFFF;
+    color: #222222;
+    border: solid 1px #FFFFFF;
+    font-weight: bold;
+}
+
+.gldp-default-day-hover {
+    background-color: #FFFFFF;
+    color: #F82200;
+    border: solid 1px #FFCC00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Selected days */
+.gldp-default-selected {
+    background-color: #FFEEEE;
+    color: #222222;
+    border: solid 1px #FFCC00;
+}
+
+/* Today */
+.gldp-default-today {
+    background-color: #FFCC00;
+    color: #000000;
+    border: solid 1px #000000;
+    font-weight: bold;
+}
+
+.gldp-default-today-hover {
+    background-color: #FFFFFF;
+    color: #F82200;
+    border: solid 1px #FFCC00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Weekends */
+.gldp-default-sat, .gldp-default-sun {
+    background-color: #FFFFFF;
+    color: #004F8F;
+    border: solid 1px #FFFFFF;
+    font-weight: bold;
+}
+
+.gldp-default-sat-hover, .gldp-default-sun-hover {
+    background-color: #FFFFFF;
+    color: #004F8F;
+    border: solid 1px #FFCC00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Non-selectable day.  Includes:previous/next month days and days that fall in the allowOld and endDate conditions */
+.gldp-default-noday {
+    background-color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+    color: #666666;
+    cursor: wait;
+}
+
+.item_sortable {
+    margin: auto;
+    padding: 0;
+    list-style: none outside none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.item_sortable li {
+    border: 1px solid #BBBBBB;
+    list-style: none;
+    cursor: move;
+    padding: 5px 12px 5px 12px;
+    margin: 5px;
+    height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+li.sortable-placeholder {
+    border: 2px dashed #CCCCCC;
+    background: none;
+    padding: 5px 12px 5px 12px;
+    margin: 5px;
+    height: 18px;
+}
+
+#diff_result {
+    font-family: Monaco, "Lucida Console", monospace;
+    width: 100%;
+    font-size: 11px;
+    overflow: scroll;
+    margin: 6px 0 18px 0;
+}
+
+#diff_table {
+    width: 100%;
+    background-color: #EEEEEE !important;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    white-space: pre-line;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DDDDDD;
+}
+
+#diff_table td {
+    background: #FFFFFF;
+    padding: 3px 5px;
+    color: #000000;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.diff_head {
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 6px;
+}
+
+.diff_foot {
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 12px !important;
+}
+
+.diff_lno {
+    width: 3%;
+    padding-right: 6px !important;
+    font-weight: bold;
+    text-align: right;
+}
+
+.diff_none {
+    background: #FFFFFF;
+}
+
+.diff_chg {
+    background: #FFCC00 !important;
+}
+
+.diff_new {
+    background: #CCFF99 !important;
+}
+
+.diff_old {
+    background: #CCFF99 !important;
+}

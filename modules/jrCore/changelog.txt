@@ -1,0 +1,462 @@
+Jamroom Core changelog
+
+Version 5.2.22:
+ - New: "View Keys" button in User/Profile browser to view raw DataStore key/values
+ - New: Multiple file attachments will now show all attachments in "update" forms
+ - New: Queue worker can return "EXIT" to force exit of worker even if queues left
+ - Change: Performance Check optimized to be a little more consistent across runs
+ - Change: Custom module URL can now contain a dash (-)
+ - Change: Template Compare tool drop down select list now ordered by version number
+ - Bug Fix: Email Throttling not working properly if no requests kick off exit listener
+ - Bug Fix: Embed code with "flashvars" param not embedding even with object,embed,param allowed
+ - Bug Fix: 404 Not Found missing page title
+
+Version 5.2.21:
+ - New: "Optimize Tables" option added to Integrity Check tool
+ - New: Share your Performance Test results tool to submit your results to the Network
+ - Change: Additional fixes for "extra" spacing showing in TinyMCE editor output
+ - Change: HTML "alt" tag change to "title" tag on index, list, and item detail buttons
+ - Change: Removed Content-Encoding header from response
+ - Change: "Font Size" updated to support all pixel sizes from 8px to 96px
+ - Bug Fix: Dashboard total RAM size could be incorrect when running on Mac OS X (10.9+)
+ - Bug Fix: Some items not being deleted properly when a skin is deleted
+ - Bug Fix: "line-height" had incorrect pixel values in Style Editor
+
+Version 5.2.20:
+ - New: Template Compare tool updated with ability to merge template changes line by line
+ - Change: Additional spacing between paragraphs in TinyMCE editor output removed
+ - Bug Fix: Saving changes in "Untagged" Style editor section refreshing to wrong tab
+ - Bug Fix: "Reset" button could show on style elements that had not been modified
+ - Bug Fix: Selector Search not working properly in tabs outside of "Color and Font"
+ - Bug Fix: Form Fields with the form_designer flag set to FALSE not always ordering correctly
+
+Version 5.2.19:
+ - Bug Fix: Possible CRI SQL error on install could keep system from installing
+ - Change: Updates to Performance Check tool to add performance history
+
+Version 5.2.18
+ - New: "Performance Check" tool avialable in System Check screen to test server performance
+ - Change: $_data object in html_purifier event listener is no longer "finalized"
+ - Change: jrCore_copy_dir_recursive() updated to support better variable replacement
+ - Change: Updated bundled Mobile Detect library to version 2.8.11
+ - Change: jrCore_is_tablet_device() now returns TRUE if device is a tablet OR mobile device
+ - Change: Updated bundled jPlayer to version 2.9.2: https://github.com/happyworm/jPlayer/releases
+ - Bug Fix: Deleting module or skin from info screen may not remove all release directories
+ - Bug Fix: Allowed Domains not properly stripping www. before domain check
+
+Version 5.2.17:
+ - New: Style Editor updated with new tabs and search features
+ - New: {jrCore_include} now accepts a "skin" parameter for loading template from alternate skin
+ - Change: {jrCore_media_player} updated to not force Firefox to the flash first solution for audio
+ - Change: Updated bundled jPlayer to version 2.9.1: https://github.com/happyworm/jPlayer/releases
+ - Bug Fix: jrCore_list with order_by _created not always working correctly
+ - Bug Fix: jrCore_list pager param set to "false" causing pager to show.
+ - Bug Fix: User's active profile_id may not be set correctly on "update" form view
+
+Version 5.2.16:
+ - New: modules can include their own sprite icons in img/icons_(black|white)
+ - Change: ordering by _created no longer maps to ordering by _item_id
+ - Change: Form Designer field ordering updated to be more consistent
+ - Bug Fix: Form Designer could get "stuck" turned on for a specific form
+ - Bug Fix: Cache key used in {jrCore_list} could be incorrect based on listeners
+
+Version 5.2.15:
+ - New: "disable_override" parameter for {jrCore_include} disables skin template override
+ - Change: Updated bundled jPlayer to version 2.8.1
+ - Bug Fix: object/embed/param tags not working correctly even if allowed in Core Tags
+ - Change: added a default page title for modules index page
+ - New: added new core icons 'male' and 'globe'
+
+Version 5.2.14:
+ - Bug Fix: Custom image replacement for skins in the "image" tab may not save correctly
+ - Bug Fix: Multiple editor fields on a single form was not working
+ - Change: Modal status updates should now be more stable on resource limited servers
+ - Change: Updated bundled TinyMCE editor to version 4.1.6
+
+Version 5.2.13:
+ - New: Eight new Event Triggers built in to the Core queue system (see Core Info in developer mode)
+ - New: Search location in ACP has been udpated, and now also searches module and skin names
+ - Change: Updates and Fixes to core Queue System to make it faster and more efficient
+ - Change: Server Check no longer shows checks for inactive modules
+ - Change: Improvements to table support in the TinyMCE editor - background color and colspan now work
+ - Bug Fix: "X" and "!" buttons in Activity Log were not showing correctly after 5.2.12 update
+ - Bug Fix: "All Events" registered event listener may not fire in some instances
+ - Bug Fix: Skin Info tab may not update to show latest skin Meta information
+ - Bug Fix: Form Designer help for Select and Text was incorrect and has been removed
+ - Bug Fix: Template Editor when running on SSL could return an OpenSSL error
+
+Version 5.2.12
+ - Change: jrCore_media_player type parameter is now optional - will use skin defined players by default
+ - Bug Fix: Checktype plugins outside the Core may not load correctly in rare instances
+ - Bug Fix: Profile and Item URLs with non ASCII characters and double quotes may not encode correctly
+ - Bug Fix: Better detection of base site URL when doing a new Jamroom install
+
+Version 5.2.11:
+ - New: Override support for module CSS and JS files (works the same as templates)
+ - New: Ability to Pause and Resume worker queues from Queue Viewer tool
+ - Change: Browser location changes now work with User Accounts "Force SSL" global config setting
+ - Change: Activing a new or previously deactivated module now resets the User Language caches
+ - Bug Fix: Possible SQL error for daily maintenance when running in Developer Mode
+ - Bug Fix: "Radio" custom form field may return "Invalid Checktype" error when submitted
+ - Bug Fix: jrCore_download_file() appending '1' to end of downloaded content
+ - Bug Fix: Number of queue entries returned for active queues could be incorrect on a busy system
+
+Version 5.2.10:
+ - New: Support added for UNIQUE option on {jrCore_list} group_by parameter
+ - New: New "tpl_404" event trigger fired when a template is not found
+ - Change: Updated bundled jPlayer to version 2.7.0
+ - Change: Updated bundled Mobile Detect to version 2.8.3
+ - Change: Updated bundled TinyMCE to version 4.1.5
+ - Bug Fix: Custom form fields not having custom lang strings copied to other languages
+ - Bug Fix: Timeline entries stripped of HTML may cause icons to not show
+ - Bug Fix: Chained Select fields might be split up on form display
+ - Bug Fix: User needed Quota Permissions for an item for it to be displayed
+ - Bug Fix: "Reset" button for CSS class/id in Style Editor was overlapping element help button
+ - Bug Fix: checktype 'file_name' was not working correctly
+ - Bug Fix: templates included via a template {capture} that contain a {jrCore_list} call may not work properly
+
+Version 5.2.9:
+ - New: checktype 'file_name' to allow for strings that also contain a . (dot)
+ - Change: Tinymce upgraded to version 4.1.3
+ - Change: Quota item count restriction no longer enforced when viewed by profile owner (allows for delete)
+ - Bug Fix: Item updates by non-creating module when Item Approval set to "modify" causing item to go pending
+ - Bug Fix: magic_quotes_gpc PHP setting is now properly handled for $_COOKIE values
+ - Bug Fix: Custom form fields not showing if multiple quota ids are selected in form designer
+
+Version 5.2.8:
+ - New: added profile_id option to {jrCore_get_count} to get counts for a specific profile
+ - New: Updated installer so a marketplace account can be created at install time
+ - Change: Invalid event trigger data array now logged only if running in Developer Mode
+ - Bug Fix: bug fixes and improvements in Form Designer ordering of custom fields
+ - Bug Fix: User Group restrictions for Form Designer fields may not work properly
+
+Version 5.2.7:
+ - Bug Fix: regression bug in 5.2.6 where the active skin config may not be loaded properly
+
+Version 5.2.6:
+ - New: "create_queue_entry" event trigger - fired when a new queue entry is created
+ - New: jrCore_load_url() and jrCore_download_file() updated to allow a custom User Agent string
+ - New: jrCore_get_support_dir() function for module storage that is not reset
+ - Change: unmodified form designer fields will use field definition from module
+ - Bug Fix: Global Config options for non-active skin may not be saved correctly
+
+Version 5.2.5:
+ - Bug Fix: jrCore_json_response() not sending custom headers beyond Content-Type
+ - Bug Fix: jrCore_strip_html not stripping text values inside <script> tags
+ - Bug Fix: Dashboard load now shows correctly on servers using CloudLinux Virtual CPUs
+ - Change: bundled Smarty upgraded to version 3.1.19
+ - Change: bundled Mobile Detect upgraded to version 2.8.2
+ - Change: contrib/pear/XML directory removed (was not used)
+
+Verison 5.2.4:
+ - Change: {jrCore_get_count} now returns 0 if module is not installed / inactive
+ - Bug Fix: CSS colors not working correctly in Activity Logs -> Debug Log
+ - Bug Fix: Date Picker drop down should position correctly in elements with position: absolute
+ - Bug Fix: HTML inside BBCode tags in forum posts could be stripped on submit
+
+Version 5.2.3:
+ - New: Link editor in TinyMCE allows a "Lightbox Group" to enable lightbox for anchors around images
+ - New: image fields created in Form Designer now show small delete button on mouse over in update
+ - Bug Fix: centering a table in the editor was not working (align attribute was being stripped)
+
+Version 5.2.2:
+ - New: {jrCore_pending_notice} template function for use with custom item detail templates
+ - Change: registered CSS URLs by modules moved to header from footer to speed rendering
+ - Change: Sprite icons moved to spans from divs for HTML 5 validation
+ - Bug Fix: Approve/Reject button for a pending item on detail page may result in invalid item_id
+ - Bug Fix: jrCore_json_response() not setting proper application/json response header
+
+Version 5.2.1:
+ - New: better random results for datastores with more than 25,000 entries when using a group_by
+ - New: Lightbox view of image if an image is uploaded to a "file" field
+ - New: "delete" option for file type form fields to allow deleting just the attached file
+ - Bug Fix: "previous" icon_white icon was named incorrectly and would show as a down arrow
+
+Version 5.2.0:
+ - New: Customizable Dashboard allowing custom rows, columns and individual panel functions
+ - New: optgroup support for module select fields when options are a multidimensional array
+ - New: jrCore_number_format() and jrCore_money_format() functions
+ - New: Full Screen button added to editor menu
+ - Change: old version of jQuery lightbox no longer loaded by default (jquery.lightbox.min.js)
+ - Change: most newlines and additional comments now stripped from cached CSS when not in Developer Mode
+ - Bug Fix: DS search param using custom sub query causes CRI SQL error when operator is not_in or not_like
+ - Bug Fix: Modules with categories longer than 2 words showing up in "tools"
+
+Version 5.1.46:
+ - New: TinyMCE editor now uses smilies from the jrSmiley module
+
+Version 5.1.45:
+ - New: ALLOW_ALL_DOMAINS is checked for downloading (in addition to streaming)
+ - New: "autocorrect" and "autocapitalize" added as allowed attributes for text input form field
+ - Change: download_file and stream_file views now use jrCore_db_search_items() to get data
+ - Change: Updated bundled jQuery to version 1.11.1
+ - Change: Improved Syntax Highlighting when using CodeMirror
+
+Version 5.1.44:
+ - Bug Fix: select_multiple fields saving "Array" instead of selected value(s)
+ - Change: Skin validation is now run when changing active skins (fix for skin uploaded via FTP)
+
+Version 5.1.43:
+ - Bug Fix: Skin Menu Editor returns a CRI error when trying to create a new entry with an existing URL
+ - New: Skin Menu entries can now have the same Linked URL as long as the category is different
+ - Change: Updated download function should allow large downloads to start faster and use less memory
+ - Change: Updated bundled ZIP Classes to version 1.62
+
+Version 5.1.42:
+ - Bug Fix: Style editor not showing proper Font Family if more than one defined for a CSS selector
+ - Bug Fix: Min/Max form field config options in Form Designer may not save if emptied
+ - Change: core shutdown function improvements to work better on CGI/FastCGI and PHP-FPM systems
+ - Change: Style Editor updated with selector search and opacity support
+
+Version 5.1.41:
+ - New: text, password, textarea, select and select_multiple form fields now accept "class" parameter
+ - New: Tab support for skin global config to separate config into "sections" (based on field section)
+ - Change: More DataStore optimizations for larger datasets
+ - Bug Fix: module config.php with only hidden form fields showing blank page on Global Config
+ - Bug Fix: OptionList form fields may fail form validation in some situations
+
+Version 5.1.40:
+ - Change: Some additional DataStore optimizations for larger data sizes (over 25,000 DS entries)
+ - New: {jrCore_powered_by} smarty template function
+
+Version 5.1.39:
+ - Bug Fix: Custom OptionList form fields may return an empty jrCore_checktype error on submission
+
+Version 5.1.38:
+ - New: db_query_init and db_query_exit event triggers
+ - Change: System Check will try to set correct permissions on bundled diff binary if possible
+ - Change: Small delay added to queue pickup time to ensure queue worker loads on a new process
+ - Bug Fix: Live Search value may not get updated properly when selecting drop down value
+
+Version 5.1.37:
+ - New: "stream_url_error" Event fired when the media player is unable to load a media URL
+ - New: custom form field form designer options function support for use in form designer
+ - Change: ChainedSelect and ChainedSelectAndText custom forms moved to Chained Select module
+ - Bug Fix: Modify Item List Button "no group restrictions" group setting not saving in some instances
+
+Version 5.1.36:
+ - Bug Fix: ChainedSelect and ChainedSelectAndText custom forms now being handled correctly
+ - Bug Fix: Some debug code was inadvertantly left in 2 library scripts
+ - New: "return_count" parameter support added to {jrCore_list} template function
+
+Version 5.1.35:
+ - Change: diff binary now included in tools to make setup easier
+ - Bug Fix: Manual entry of value in Live Search field that is not matched not being saved
+ - Bug Fix: DS entries longer than 768 chars not being fully searched when using like/not_like
+ - Change: Update bundled jPlayer to version 2.6.0
+
+Version 5.1.34:
+ - Bug Fix: Fixed some select elements that were missing the closing select HTML tag
+ - Bug Fix: if Followers module is disabled, private profiles may not be able to access their own items
+
+Version 5.1.33:
+ - New: "Queue Viewer" tool for viewing active worker queue information
+ - New: "skip_play_keys" registered module feature for excluded play key replacement on specific views
+ - New: jrCore_delete_multiple_cache_entries() function
+ - New: id, onclick, onmousever and onmouseout parameter support added to {jrCore_image}
+ - Bug Fix: Template Compare not working properly for module templates
+ - Change: including a display_order DS key in the create array will now override the default DS key
+ - Change: bundled Smarty upgraded to version 3.1.17
+ - Change: bundled Mobile Detect upgraded to version 2.7.9
+
+Version 5.1.32:
+ - Bug Fix: More DataStore optimizations and corner cases resolved
+ - Bug Fix: Select Multiple showing "default" value as selected after save even if unselected
+
+Version 5.1.31:
+ - Change: page jumper updated to be faster and generate less HTML when page count gets really large
+ - Bug Fix: tags in [code] blocks being stripped from input if HTML tags in code block were not in Allowed HTML
+ - Bug Fix: jrCore_list calls with a group_by and a != or not_in or not_like search operator bypassing group_by
+
+Version 5.1.30:
+ - New: HTML header tag (h1 -> h6) support added to "Allowed HTML" in HTML Purifier
+ - New: lightbox2 support added and core updated to use it in place of the jQuery lightbox plugin
+ - New: jrCore_db_search_items updated so != and not_in now include DS items missing the search key
+ - New: "display_order" event fired with the item array during the display_order Magic View
+ - New: "db_delete_keys" event for jrCore_db_delete_item_key() and jrCore_db_delete_multiple_item_keys()
+
+Version 5.1.29:
+ - Bug Fix: "random" ordering not working with _created, _updated, _item_id as key
+ - Change: jrCore_get_counts template function now uses jrCore_db_search_items with triggers
+ - New: fdebug_only_ip(), fdebug_ignore_images() and fdebug_ignore_ajax() developer functions
+
+Version 5.1.28:
+ - New: "All Users" and "Visitor" groups added to Form Designer
+ - Bug Fix: HTML validator converting void tags to XHTML style instead of HTML5 style
+
+Version 5.1.27
+ - Bug Fix: Sample length audio file was not being streamed if FoxyCart module was not enabled
+ - Bug Fix: jrCore_list calls without order_by may result in no list being returned
+
+Version 5.1.26:
+ - Bug Fix: Javascript src cache file was being rebuilt more frequently than it should have been
+ - Bug Fix: javascript_footer_function element being overwritten if multiple modules register for same page
+
+Version 5.1.25:
+ - Bug Fix: CSS will now display properly for media player loaded via AJAX
+ - Bug Fix: jrCore_db_search_items() search param for _item_id is working correctly now
+ - Bug Fix: single group_by parameter regression in 5.1.24
+
+Version 5.1.24:
+ - New: "signed" Checktype plugin for validating signed (+/-) whole numbers
+ - New: jrCore_db_search_items group_by param now accepts comma separated list of multiple group by columns
+ - Bug Fix: Schema changes to mediumtext and longtext database column types were not being picked up
+ - Change: bundled jQuery updated to version 1.11.0
+ - Change: bundled jQuery Simple Modal updated to version 1.4.4
+ - Change: removed -ExecCGI from default .htaccess file
+
+Version 5.1.23:
+ - New: "html_purifier" trigger fired during HTMLPurifier Config setup to allow modules to add to config
+ - Change: bundled HTMLPurifier updated to version 4.6.0
+
+Version 5.1.22:
+ - New: Group selection in Form Designer allows for multiple group selections
+ - New: "live_search" form field can accept an array for value defining key => value
+ - Bug Fix: "search" was being saved as the live search value if no value is entered
+ - Bug Fix: Developer Mode from Developer Tools module was not causing CSS an JS to be rebuilt one each access
+ - Change: "file" form field update detail style modified to better fit the form
+
+Version 5.1.21:
+ - Change: jrCore_copy_dir_recursive() now uses str_replace instead of preg_replace
+
+Version 5.1.20:
+ - New: "columns" layout field parameter for optionlist form field with variable column support
+ - Bug Fix: Select and Text field pre-selected option not working on multi-bytes strings
+
+Version 5.1.19:
+ - Bug Fix: hitting enter caused the form to submit in locations with one text field only.
+
+Version 5.1.18:
+ - Bug Fix: Completely emptying an editor field may revert to previously stored content
+ - Change: Cache keys now include JR directory and active skin for better separation
+ - Change: Config options defined in config/config.php no longer overwritten by DB settings
+
+Version 5.1.17:
+ - New: form_designer_prefix feature support to allow Form Designer to work with modules that do not have a DataStore
+ - Bug Fix: Images tab template example code was incorrect for admin uploaded images
+ - Bug Fix: extended HTML attributes were not working select_and_text or live_search form fields
+ - Bug Fix: Item count for profiles with number of items restricted could be cached and incorrect
+ - Change: Template Compare button will not show if diff binary cannot be executed by web user
+
+Version 5.1.16:
+ - New: Template Compare functionality in template editor to compare and update custom templates to default templates
+ - Bug Fix: CSS image url not working for overridden images
+
+Version 5.1.15:
+ - Bug Fix: pagination jumper was not showing if less than a single page of results were displayed
+ - Change: module_priority can now be changed during a module upgrade
+ - Change: {jrCore_get_count} now uses a DS query to get counts, allowing for event listeners
+
+Version 5.1.14:
+ - Bug Fix: searching the data store browser for numeric values would return more than were actually matched
+ - Bug Fix: Custom module category was being changed back to the default on an Integrity Check
+ - Bug Fix: expand textarea button was showing on custom editor form fields created in the Form Designer
+ - Bug Fix: colons are now allowed in URLs turned in to clickable URLs via jrCore_url_string()
+ - Change: {jrCore_image} without a title will now use the value of the alt parameter if set
+
+Version 5.1.13:
+ - Bug Fix: very long multibyte text items were not being stored correctly in the DataStore
+ - New: {jrCore_icon} now accepts a "class" parameter for a custom sprite icon class
+
+Version 5.1.12:
+ - Bug Fix: slugs created for URLs could have all characters stripped except a single dash
+ - Bug Fix: jrCore_string_to_url() not working correctly if the URL contains a comma
+ - Change: "-Includes" removed from Options in default .htaccess file
+
+Version 5.1.11:
+ - Bug Fix: CSS background images were not working in installer (install.php)
+ - Change: Core License updated with proper module list of what is included in the Core
+
+Version 5.1.10:
+ - New: Skin list in ACP will now show skin "title" if set in Skin meta data
+ - New: Item Action Buttons config can select "no group" for group requirements
+ - Bug Fix: Item Action button config may not save Group selection resulting in white screen
+
+Version 5.1.9
+ - New: added new event to item pending system 'approve_pending_item'
+ - New: Item Create button available to profile owners for Item Detail pages
+ - Bug Fix: CSS values marked as !important now work properly in the CSS editor
+ - Bug Fix: CSS ID selectors can now be reset to default properly in the CSS editor
+ - Change: small fix in the pending system to use different identifier for approve/reject/delete
+ - Change: increase analyze duration on meta data for media files
+
+Version 5.1.8:
+ - Bug Fix: Disable Module option not showing if dependent module had been removed from system
+ - Bug Fix: ALLOW_ALL_DOMAINS in Allowed Domains might not disable key check and prevent streaming
+
+Version 5.1.7:
+ - New: handling of module CSS to allow CSS images to be overridden by custom uploaded images
+ - New: Number of items per page selector in page footer section for ACP listings
+ - Change: Update bundled Mobile_Detect to version 2.7.6
+ - Bug Fix: check for Developer Mode and disable DB caching was not working properly
+ - Bug Fix: CSS files that were already minimized were not working correctly
+
+Version 5.1.6:
+ - New: module and settings loader updated as some MySQL versions were not ordering correctly
+ - New: download/stream views now send proper 404 headers when media item is not found
+ - New: jrCore_db_get_item_by_key() now accepts skip_trigger and skip_caching parameters like jrCore_db_get_item()
+ - Change: Admin Users updating an item will skip the pending check if pending items are enforced by the quota
+ - Bug Fix: ALLOW_ALL_DOMAINS value for Allowed Domains global config was not working properly
+ - Bug Fix: some media titles were not working correctly in jrCore_media_player calls
+
+Version 5.1.5:
+ - New: "Item Detail Buttons" feature that allows master admins to control item buttons for modules
+ - Change: "sublabel" text field for new designer form fields now defaults to being empty
+ - Change: Registered module Text Formatters are now enabled by default in quotas on module install
+ - Change: default value for Cache Seconds is now 300 instead of 30
+ - Bug Fix: "Clickable URLs" text formatter could break BBCode [url] tags depending on module load order
+ - Bug Fix: Designer form fields in forms with module added fields may not order correctly
+ - Bug Fix: Rare "Duplicate Key" SQL error when creating a new profile item has been fixed
+
+Version 5.1.4:
+ - New: Custom Skin image uploads now show template embed code to use in templates
+ - Bug Fix: Javascript page elements may not be set on profile.php form views
+ - Bug Fix: repair.php.html script was bombing with error if marketplace items installed
+ - Bug Fix: unable to delete inactive module that has unmet dependencies
+
+Version 5.1.3:
+ - New: "Errors Only" button in the Activity Log
+ - New: "log_message" jrCore trigger event that is fired when a message is added to the Activity Log
+ - New: skin menu items can define menu entries to require a value from the users Home Profile quota
+ - New: "src_only" parameter for {jrCore_image} template function - returns only src URL for image instead of full tag
+ - Change: Skin Menu entries are no longer cached for logged in users
+ - Bug Fix: The "live_search" form field type now accepts "value" and "default" parameters
+ - Bug Fix: multi profile users could change active profiles while creating an item and have the item be saved to the wrong profile
+ - Bug Fix: item_id in db_delete_item event was not correct for jrUser/jrProfile deletes
+
+Version 5.1.2:
+ - New: "cache_seconds" jrCore_db_search_items parameter support
+ - Bug Fix: Smarty "default" variable modifier was not always replacing empty vars ("home" page title should now work)
+ - Bug Fix: "sections" in module forms using the form designer were not always ordered correctly
+
+Version 5.1.1:
+ - New: Template processor uses unique app_dir prefix so change of JR directory does not use old templates
+ - Bug Fix: "target" attribute for anchor tags was being stripped
+
+Version 5.1.0:
+ - New OR ability for DataStore searches - i.e. "user_name like %brian% || user_name like %brad%"
+ - New user counts for modules using a DataStore (i.e. user_jrComment_item_count, user_jrRating_item_count, etc.)
+ - New Item Detail Features tool (System Core -> Tools) and support
+ - Module requires can now define a minimum required version number via ModuleDir:ModuleVersion
+ - New jrCore_get_advanced_setting() for checking for advanced settings set in config/config.php
+ - New jrCore_format_string modifier functionality + "Text Formatters" tool
+ - New jrCore_db_delete_multiple_item_keys() DataStore function
+ - New Cache Reset checkbox added to Integrity Check
+ - New repair.php.html script for repairing JR Database tables offline
+ - Bug Fix: The ACP could revert to the Elastic skin temporarily when a new module was loaded
+ - Bug Fix: cache keys sometimes would not line up on set/delete
+ - Bug Fix: JS elements added by modules were not being added to profile index views or skin template overrides
+ - Bug Fix: Skin Menu entry re-ordering would appear not to work
+ - Bug Fix: jrCore_string_to_url() works properly with URL as first character of a string
+ - Bug Fix: Custom Skin Menu entries were not showing
+ - Bug Fix: meta/footer JS/CSS were not always being added in properly to the template
+ - Bug Fix: modified and new functions for use with the jrChainedSelect module
+ - Bug Fix: Memory values are now correct on Mac OS X 10.9 Mavericks
+ - Bug Fix: Modal errors now show in update list just like updates
+ - Update bundled TinyMCE editor to version 3.5.10
+ - Update bundled Mobile_Detect to version 2.7.2
+ - Update bundled Smarty to version 3.1.15
+ - Update bundled jPlayer to version 2.5.0
+
+Version 5.0.0:
+ - Initial Release

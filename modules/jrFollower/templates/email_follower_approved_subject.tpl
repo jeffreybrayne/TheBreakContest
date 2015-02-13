@@ -1,0 +1,1 @@
+You are now following {$profile_name}!

@@ -1,0 +1,1 @@
+Your {$_conf.jrCore_system_name} account has been accessed from a new device

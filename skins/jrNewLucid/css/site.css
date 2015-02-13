@@ -1,0 +1,79 @@
+#wrapper {
+    margin:0 auto;
+    background-color:#FFFFFF;
+}
+
+/* @title Site Content */
+/* @help This is the main Site Content holder */
+#content {
+    max-width:1140px;
+    margin-left:auto;  /* @ignore */
+    margin-right:auto; /* @ignore */
+    background-color:#FFFFFF;
+    height:100%; /* @ignore */
+    font-size:1em;
+    padding:3px;
+}
+
+#content > .page_content {
+    padding: 9px;
+}
+
+#content > form {
+    padding: 9px;
+}
+
+#content > #admin_container {
+    padding: 9px;
+}
+
+.search_results_container {
+    padding: 9px;
+}
+
+/* @title block */
+/* @help This is the main style for the individual blocks of the page */
+.block {
+    background-color:transparent;
+    padding:12px;
+    margin:0 auto;
+}
+
+.recommend_box {
+    background-color:#EDEDED;
+    padding:25px;
+    margin:12px;
+    border-style:solid;
+    border-color:#DDDDDD;
+    border-width:1px;
+    font-size:16px;
+    color:#000000;
+}
+
+.recommend_box a {
+    color:#336699;
+    text-decoration:none;
+}
+.recommend_box a:hover {
+    color: #333;
+    text-decoration:underline;
+}
+.search_box {
+    background-color:#EDEDED;
+    padding:25px;
+    margin:12px;
+    border-style:solid;
+    border-color:#DDDDDD;
+    border-width:1px;
+    font-size:16px;
+    color:#000000;
+}
+
+.search_box a {
+    color:#336699;
+    text-decoration:none;
+}
+.search_box a:hover {
+    color: #333;
+    text-decoration:underline;
+}

@@ -1,0 +1,74 @@
+/* @title Info Log */
+/* @help The Activity Log Information section */
+.log-inf {
+    background-color:transparent;
+    text-align:left;
+}
+/* @title Minor Log */
+/* @help The Activity Log Minor section */
+.log-min {
+    background-color:#9C0;
+    text-align:left;
+    color:#000;
+}
+/* @title Major Log */
+/* @help The Activity Log Major section */
+.log-maj {
+    background-color:#F90;
+    text-align:left;
+    color:#000;
+}
+/* @title Critical Log */
+/* @help The Activity Log Critical section */
+.log-cri {
+    background-color:#900;
+    text-align:left;
+    color:#FFF;
+}
+
+#error_log {
+    background-color:#0A0A0A;
+    font-family:Monaco, "Lucida Console", monospace;
+    width:93%;
+    height:390px;
+    padding:6px;
+    margin:0 auto;
+    font-size:12px;
+    overflow:auto;
+    white-space:pre-line;
+    color:#CCC;
+}
+
+#debug_log {
+    background-color:#0A0A0A;
+    font-family:Monaco, "Lucida Console", monospace;
+    width:93%;
+    height:390px;
+    padding:6px;
+    margin:0 auto;
+    font-size:12px;
+    overflow:auto;
+    white-space:pre-line;
+    color:#CCC;
+}
+.php_Notice {
+}
+.php_Warning {
+    color:#F60;
+}
+.php_Fatal, .php_Parse {
+    color:#BA4B0D;
+}
+.CodeMirror {
+    background-color:#FFF;
+    color:#000;
+    width:93%;
+    padding:0;
+    margin:0 0 0 8px;
+    font-size:12px;
+    border:solid 1px #7f7f7f;
+    overflow:auto;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+}

@@ -1,0 +1,112 @@
+/* Tab Bar */
+/* @title Tab Bar Holder */
+/* @help This is the holder for the tab bar */
+.page_tab_bar_holder {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #999999;
+}
+
+.page_tab_bar_spacer {
+    height: 10px;
+    background-color: #FFFFFF;
+}
+
+.page_tab_bar {
+    padding-left: 16px;
+}
+
+/* @title Page Tab */
+/* @help This is the tab for the tab bar */
+.page_tab {
+    background-color: #DDDDDD;
+    float: left;
+    list-style: none;
+    margin-left: 6px; /* @ignore */
+    color: #000000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0; /* @ignore */
+}
+
+/* @title Page Tab Hover */
+/* @help This is the tab hover for the tab bar */
+.page_tab:hover {
+    background-color: #444444;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* @title Page Tab Hover Link */
+/* @help This is the tab link hover for the tab bar */
+.page_tab:hover a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* @title Page Tab Link */
+/* @help This is the tab URL link for the tab bar */
+.page_tab a {
+    padding: 5px 10px; /* @ignore */
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+
+.page_tab_first {
+    margin-left: 0;
+}
+
+.page_tab_last {
+}
+
+/* @title Page Tab Active */
+/* @help This is the active tab */
+.page_tab_active {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-top: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-bottom: 0;
+    margin-bottom: -1px;
+}
+
+/* @title Tab Active Hover */
+/* @help This is the active tab hover effect */
+.page_tab_active:hover {
+    background-color: #DDDDDD;
+    color: #000000;
+    border-bottom: 0;
+    text-decoration: none;
+}
+
+.page_tab_active:hover a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* @title Tab Active Link */
+/* @help This is the active tab URL link */
+.page_tab_active a {
+    color: #000000;
+}
+
+/* @title Tab Active Hover Link */
+/* @help This is the active tab URL link hover effect */
+.page_tab_active a:hover {
+    color: #333333;
+}
+
+.page_tab_hilight {
+    background-color: #FFCC00;
+    color: #000000;
+}
+.page_tab_hilight a {
+    color: #000000;
+}

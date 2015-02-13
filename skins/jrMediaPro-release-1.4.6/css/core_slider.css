@@ -1,0 +1,209 @@
+/*! http://responsiveslides.com v1.32 by @viljamis */
+
+.slider_content {
+    max-width:1140px;
+    padding:0;
+    background-color:#FFF;
+    border: 4px solid #AAA;
+    margin-top:10px;  /* @ignore */
+    margin-bottom:0;
+    margin-right:5px; /* @ignore */
+    margin-left:5px;  /* @ignore */
+    height:100%; /* @ignore */
+}
+
+.slider_caption_text {
+    font-size:12px;
+    color:#CCC;
+}
+.slider_caption_text a {
+    color:#0099FF;
+    text-decoration:none;
+}
+.slider_caption_text a:hover {
+    color:#FF9900;
+    text-decoration:none;
+}
+
+.swrapper {
+    padding:26px;
+    margin:0 auto;
+}
+
+.rslides {
+    background:#000;
+    position:relative;
+    list-style:none;
+    overflow:hidden;
+    width:100%;
+    padding:0;
+    margin:0 auto;
+}
+
+.rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height:348px;
+    left:0;
+    top:0;
+    margin:0 auto;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    margin:0 auto;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    margin:0 auto;
+}
+
+h3,h4,pre {
+    text-align: left;
+    max-width: 512px;
+    margin: 0 auto 20px;
+}
+
+.rslides {
+    margin: 0 auto 40px;
+}
+
+.rslides_tabs {
+    list-style: none;
+    padding: 8px 0;
+    background-color:#1A1A1A;
+    font-size: 12px;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 525px;
+    text-align: center;
+    width: 100%;
+}
+
+.rslides_tabs li {
+    display: inline;
+    float: none;
+    margin:0 auto;
+}
+
+.rslides_tabs a {
+    width: auto;
+    line-height: 20px;
+    padding: 3px 5px;
+    height: auto;
+    background: transparent;
+    display: inline;
+    color:#0099FF;
+}
+.rslides_tabs a:hover {
+    color:#FF9900;
+    text-decoration:none;
+}
+.rslides_tabs li:first-child {
+    margin-left: 0;
+}
+
+.rslides_tabs .rslides_here a {
+    background:#222;
+    color: #CCC;
+    font-weight: bold;
+    border:1px solid #000;
+}
+
+/* Callback example */
+
+h3 {
+    line-height: 14px;
+    font-size: 14px;
+    font-family: Tahoma,sans-serif;
+    text-align: center;
+    color: #CCC;
+}
+
+.events {
+    list-style: none;
+}
+
+.callbacks_container {
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.callbacks {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.callbacks li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.callbacks img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+
+.callbacks .caption {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    text-transform:capitalize;
+    text-shadow: none;
+    color: #CCC;
+    background: #222;
+    background: rgba(0,0,0, .8);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: none;
+}
+
+.callbacks_nav {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url("{$jrMediaPro_img_url}/themes.gif") no-repeat left top;
+    margin-top: -45px;
+}
+
+.callbacks_nav:active {
+    opacity: 1.0;
+}
+
+.callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}
+

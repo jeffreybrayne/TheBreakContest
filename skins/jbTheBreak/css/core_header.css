@@ -1,0 +1,129 @@
+#top-bar {
+    max-width:1140px;
+    background:#111111;
+    height:32px;
+    border-top: 1px solid #282828;
+    border-left: 1px solid #282828;
+    border-right: 1px solid #282828;
+    border-bottom:1px solid #000;
+    margin:15px auto 0 auto;
+    border-radius: 5px 5px 0 0;
+}
+#top-bar-wrapper {
+    max-width:1140px;
+    margin:0 auto;
+    padding:0;
+}
+
+.welcome {
+    text-transform:capitalize;
+    color: #999;
+    padding:8px 8px 8px 16px;
+    float: left;
+}
+.page-welcome {
+    color:#0099FF;
+    background-color:transparent;
+    padding:1px 3px 1px 0;
+}
+.page-welcome:hover {
+    color:#FF9900;
+    background-color:transparent;
+}
+.flags {
+    padding:8px;
+    float: right;
+}
+/* @title Header */
+/* @help This is the main header section for the site */
+#header {
+    max-width:1140px;
+    background: #111111;
+    background: -moz-linear-gradient(#222222, #111111);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#111111));
+    background: -webkit-linear-gradient(#222222, #111111);
+    background: -o-linear-gradient(#222222, #111111);
+    background: -ms-linear-gradient(#222222, #111111);
+    background: linear-gradient(#222222, #111111);
+    padding:0;
+    margin:0 auto;
+    border-top: 1px solid #282828;
+    border-right: 1px solid #282828;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #282828;
+}
+/* @title Header Links */
+/* @help Header text URL */
+#header a {
+    text-transform:capitalize;
+    text-decoration:none;
+    color:#fff;
+}
+
+/* @title Header Link Hover */
+/* @help Header text URL hover */
+#header a:hover {
+    text-decoration:underline;
+    color:#fff;
+}
+
+#header_content {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    text-shadow:2px 2px 4px #000;
+}
+
+#main_logo {
+    vertical-align:middle;
+    padding:0;
+    cursor:pointer;
+}
+
+/* @title Main Menu */
+/* @help Main Menu */
+#main_menu {
+    height:100%;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:right;
+    font-size:16px;
+    padding-right:12px;
+}
+.logo-ads {
+    float:right;
+    padding-top:10px;
+    padding-right:8px;
+}
+
+.shadow {
+    background-color:#333;
+    height:14px;
+    padding:0;
+    margin:-5px auto 18px auto;
+}
+
+#add_to_cart_success {
+    float:left;
+    position:absolute;
+    margin:0 auto;
+    background-color:#fff;
+    border:1px solid #ddd;
+    color:#000;
+    padding:4px;
+    font-size:12px;
+}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.5;
+    position:fixed;
+    bottom:10px;
+    right:65px;
+    display:none;
+    text-indent:-9999px;
+    background: url('{$jbTheBreak_img_url}/icon_top.png') no-repeat;
+}
+.scrollup:hover{
+    opacity:1;
+}

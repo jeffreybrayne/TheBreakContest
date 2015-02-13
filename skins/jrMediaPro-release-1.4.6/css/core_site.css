@@ -1,0 +1,300 @@
+#wrapper {
+    max-width:1140px;
+    margin:0 auto 15px auto;
+    padding:0;
+    border-top: 1px solid #282828;
+    border-right: 1px solid #282828;
+    border-bottom: 1px solid #282828;
+    border-left: 1px solid #282828;
+    border-radius: 0 0 5px 5px;
+}
+
+/* @title Site Content */
+/* @help This is the main Site Content holder */
+#content {
+    background-color: #0A0A0A;
+    padding:20px 10px 20px 10px;
+}
+
+.table-title {
+    color: #CCC;
+    background-color: #212121;
+    font-size: 12px;
+    padding: 6px;
+    text-transform: uppercase;
+}
+
+.table-row {
+    color: #CCC;
+    background-color: #040505;
+    font-size: 12px;
+    padding: 6px;
+}
+.head_title {
+    text-align:left;
+    background:#212121;
+    font-size:12px;
+    padding:10px;
+    margin:0 0 5px 0;
+    color:#CCC;
+    border:1px solid #282828;
+}
+
+#head-180 {
+    height: 30px;
+    background: #212121;
+    border-bottom: #282828 solid 1px;
+    font-size: 15px;
+    padding-left: 10px;
+    line-height: 30px;
+    color: #CCC;
+}
+
+#head-180-big {
+    height: 46px;
+    background-color: #212121;
+    border-bottom: #282828 solid 1px;
+    font-size: 15px;
+    line-height: 15px;
+    padding-left: 10px;
+    color: #CCC;
+}
+
+.head-button {
+    float: right;
+    padding-top: 0px;
+    padding-right: 4px;
+}
+
+/* @title block */
+/* @help This is the main style for the individual blocks of the page */
+.block {
+    background-color:transparent;
+    padding:5px;
+    margin:5px;
+    font-size:12px;
+}
+
+/* @title block urls */
+/* @help What color should URLs be within a block? */
+.block a {
+    color: #0099ff;
+}
+/* @title block urls */
+/* @help What color should URLs be within a block? */
+.block a:hover {
+    color: #FF9900;
+    text-decoration:none;
+}
+
+.fav_body {
+    text-align:left;
+    background:#212121;
+    padding:5px;
+    margin:0 0 0 6px;
+    color:#CCC;
+    box-shadow:inset 0 0 5px #000;
+    border:0;
+}
+.fav_body h3 {
+    color:#CCC;
+}
+.fav_buttons {
+    background-color:transparent;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:capitalize;
+    color:#222;
+    padding:5px;
+    margin:0 10px;
+}
+.fav_buttons a {
+    color:#0099ff;
+    text-decoration:none;
+}
+.fav_buttons a:hover {
+    color:#FF9900;
+    text-decoration:none;
+}
+.featured_img {
+    text-align:center;
+    margin-right:10px;
+}
+.body_1 {
+    background-color:transparent;
+    padding:5px;
+}
+
+.body_2 {
+    background-color:#040505;
+    font-size:12px;
+    padding:10px;
+    margin:0 0 5px 0;
+    color:#CCC;
+    border:1px solid #282828;
+}
+
+.body_2b {
+    background-color: #000;
+    border: 2px #1C1C1C dashed;
+    padding:10px;
+    margin-bottom: 25px;
+}
+
+.newest_body_2b {
+    height:225px;
+    background: #212121;
+    padding:10px;
+    margin-bottom: 25px;
+    overflow:hidden;
+}
+
+.body_3 {
+    text-align:left;
+    background:#000;
+    font-size:12px;
+    padding:10px;
+    margin:0 0 5px 0;
+    color:#CCC;
+    border:2px dashed #1C1C1C;
+}
+.body_3_title {
+    line-height: 34px;
+    padding-left: 10px;
+}
+
+.newest_body_3 {
+    height:225px;
+    text-align:left;
+    background:#212121;
+    font-size:12px;
+    padding:10px;
+    margin:0 0 5px 0;
+    color:#CCC;
+    border:1px solid #282828;
+}
+
+.body_4 {
+    background-color: #040505;
+    margin:0;
+    font-size:12px;
+    color:#CCC;
+    border:1px solid #1C1C1C;
+}
+.body_5 {
+    background: transparent;
+    border-bottom: 1px solid #282828;
+    padding:5px;
+    margin-bottom:5px;
+    margin-right:10px;
+}
+
+.top_singles_body {
+    text-align:left;
+    background:transparent;
+    font-size:12px;
+    padding:10px;
+    margin:0 0 5px 0;
+    color:#CCC;
+    border-bottom:1px solid #282828;
+}
+
+.border-1px {border: 1px #282828 solid;}
+.box_shadow {box-shadow: 0 2px 3px rgba(0, 0, 0, .5);}
+.page {
+    background-color: #212121;
+    border: 1px #282828 solid;
+    padding: 4px;
+}
+
+.page:hover {
+    background-color: #000;
+}
+
+.page-selected {background: #000;}
+
+.search_box {
+    background-color:#212121;
+    padding:50px;
+    margin:12px;
+    border-style:solid;
+    border-color:#282828;
+    border-width:2px;
+    font-size:16px;
+    color:#CCC;
+}
+
+.search_box a {
+    color:#0099ff;
+}
+.signup_box {
+    background-color:#212121;
+    padding:25px;
+    margin:12px;
+    border-style:solid;
+    border-color:#282828;
+    border-width:1px;
+    font-size:16px;
+    color:#CCC;
+    border-radius:5px;
+    width:400px;
+}
+
+.signup_box a {
+    color:#0099ff;
+}
+.login_box {
+    background-color:#212121;
+    padding:25px;
+    margin:12px;
+    border-style:solid;
+    border-color:#282828;
+    border-width:1px;
+    font-size:16px;
+    color:#CCC;
+    border-radius:5px;
+    width:400px;
+}
+
+.login_box a {
+    color:#0099ff;
+}
+
+/* --- BLOG/REVIEW/TITLE TEXT --------- */
+
+.br-title {
+    color: #CCC;
+    font-size:17px;
+    font-weight:bold;
+}
+.br-info {
+    background: #212121;
+    padding:6px;
+    border: 1px #282828 solid;
+}
+.br-info a {
+    color:#0099FF;
+    text-decoration:none;
+}
+.br-info a:hover {
+    color:#FF9900;
+    text-decoration:none;
+}
+.entry-box-icon {
+    background: url("{$jrMediaPro_img_url}/entry_box_icon.png") no-repeat;
+    float:left;
+    position:relative;
+    top:-15px;
+    left:23px;
+    height:16px;
+    width:23px;
+}
+
+.blog-div {float:left;margin-right:10px;margin-top:3px;}
+.blog-post {background: url("{$jrMediaPro_img_url}/blog_icon_post.png") no-repeat 0 0; padding-left:20px;}
+.blog-user {background: url("{$jrMediaPro_img_url}/blog_icons.png") no-repeat 0 0; width:14px; height:14px; padding-left:20px; color:#ccc;}
+.blog-date {background: url("{$jrMediaPro_img_url}/blog_icons.png") no-repeat 0 -15px; width:14px; height:14px; padding-left:20px; margin-left:15px; color:#99FF33;}
+.blog-replies {background: url("{$jrMediaPro_img_url}/blog_icons.png") no-repeat 0 -44px; width:14px; height:14px; padding-left:20px; margin-left:15px; color:#ccc;}
+.blog-tag {background: url("{$jrMediaPro_img_url}/blog_icons.png") no-repeat 0 -29px; width:14px; height:14px; padding-left:20px; margin-left:15px; color:#ccc;}
+.blog-text {padding-top:10px;}

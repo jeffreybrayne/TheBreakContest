@@ -1,0 +1,90 @@
+.tour-list {
+    margin: 24px 0 0 0;
+    padding: 0;
+    padding-top: 12px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #FFEF93;
+}
+
+.tour-stop {
+    float: right;
+    position: absolute;
+    right: 16px;
+    bottom: 13px;
+    font-size: 10px;
+}
+
+.tour-stop a {
+    color: #D9CB7D !important;
+    text-decoration: none !important;
+}
+
+.tour-stop a:hover {
+    color: #D9CB7D !important;
+    text-decoration: none !important;
+}
+
+/* @title Tour popup URLs */
+/* @help Controls the font in the Tour modal popups */
+.tour-extra {
+    margin: 2px;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.tour-extra a {
+    color: #000000;
+}
+
+.tour-close {
+    margin-top: 12px;
+}
+
+.tour-img {
+    vertical-align: middle;
+}
+
+/* @title YouTube Modal Window */
+/* @help If a tour tip has a link to a YouTube video, this controls the size of the modal window that will open when the YouTube link is clicked */
+.tour-youtube-modal {
+    background-color: #FFFFA3;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F1D031;
+    padding: 16px;
+    width: 600px;
+    height: 430px;
+    display: none;
+    z-index: 60000
+}
+
+.qtip-youtube-close {
+    position: absolute;
+    left: 17px;
+    bottom: 12px;
+}
+
+.qtip-youtube-close a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.tour-youtube-close {
+    position: absolute;
+    right: 17px;
+    bottom: 12px;
+    cursor: pointer;
+    outline: medium none;
+    padding: 3px 9px;
+    font-size: 14px;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #AAAAAA;
+    color: #111111;
+    border-radius: 3px;
+}
+

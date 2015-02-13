@@ -1,0 +1,91 @@
+#footer ul {float:left;text-align:left;margin:0;padding:0;width:20%;}
+#footer ul li {list-style: none;line-height: 16px;font-size: 13px;}
+#footer ul li a {text-decoration:none;color:#0099FF;}
+#footer ul li a:hover {color:#9F3;}
+
+#footer-bar {
+    color: #999;
+    padding: 10px;
+    text-align: center;
+    background: #111;
+    border-top:1px solid #282828;
+    border-right:0;
+    border-bottom:0;
+    border-left:0;
+    margin:0;
+    border-radius: 0 0 5px 5px;
+}
+
+.footer-copy {
+    float:left;
+    padding-left:16px;
+}
+.footer-design {
+    float:right;
+    padding-right:16px;
+}
+.rss-footer {
+    background-image: url("{$jrMediaPro_img_url}/rss_sml.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 20px;
+}
+
+#footer {
+    background: #222222;
+    background: -moz-linear-gradient(#111111, #222222);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#111111), to(#222222));
+    background: -webkit-linear-gradient(#111111, #222222);
+    background: -o-linear-gradient(#111111, #222222);
+    background: -ms-linear-gradient(#111111, #222222);
+    background: linear-gradient(#111111, #222222);
+    vertical-align:middle;
+    margin:0 auto;
+    font-size:12px;
+    color:#CCC;
+    padding:10px;
+    border-top: 1px solid #282828;
+    border-right:0;
+    border-bottom: 1px solid #000;
+    border-left:0;
+}
+
+/* @title Footer Links */
+/* @help Footer text URL */
+#footer a {
+    text-transform:capitalize;
+    text-decoration:none;
+    color:#fff;
+}
+/* @title Footer Link Hover */
+/* @help Footer text URL hover */
+#footer a:hover {
+    text-decoration:underline;
+}
+
+#footer_content {
+    max-width:1140px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#footer_logo {
+    padding:12px;
+    vertical-align:middle;
+}
+
+/* @title Footer Text */
+/* @help Footer text */
+#footer_text {
+    text-align:right;
+    color:#CCCCCC;
+    font-size:14px;
+    padding:12px;
+}
+/* @title Footer Social Networks */
+/* @help the social network icons located in the footer */
+#footer_sn {
+    padding: 12px;
+    text-align: right;
+    vertical-align: middle;
+}

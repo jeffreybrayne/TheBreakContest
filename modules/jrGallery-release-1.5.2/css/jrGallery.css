@@ -1,0 +1,126 @@
+/* Jamroom 5 Gallery Module CSS */
+.jr_gallery_row a {
+    text-decoration: none;
+}
+
+.jr_gallery_row a:hover {
+    text-decoration: none;
+}
+
+.gallery_actions {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: none;
+}
+
+.gallery_img {
+    width: 97%;
+}
+
+.gallery_rating {
+    max-width: 80px;
+    padding-top: 4px;
+    margin: 0 auto;
+}
+
+.gallery_lightbox {
+    padding-top: 12px;
+}
+
+.gallery_lightbox a {
+    text-decoration: none;
+}
+
+.gallery_lightbox a:hover {
+    text-decoration: none;
+}
+
+#gallery_slider_box {
+    padding: 12px 0 0 0;
+    padding-left: 16px;
+}
+
+#gallery_slider {
+}
+
+.gallery_slider_prev {
+    float: left;
+    margin-right: 8px;
+    padding-top: 14px;
+}
+
+.gallery_slider_next {
+    float: left;
+    margin-left: 4px;
+    padding-top: 14px;
+}
+
+.gallery_slider_img {
+    float: left;
+    margin-right: 4px;
+}
+
+.gallery_slider_img img {
+    border: 1px solid #DDDDDD;
+}
+
+.gallery_slider_img img:hover {
+    border: 1px solid #FFCC00 !important;
+}
+
+.jrgallery_update_div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px;
+    margin: 6px 12px 6px 3px;
+    border: 1px solid #EEEEEE;
+    text-align: center;
+}
+
+.jrgallery_update_div:hover {
+    background-color: #EEEEEE;
+}
+
+.jrgallery_update_image {
+    border: 1px solid #CCCCCC;
+    margin: 1px;
+    margin-bottom: 6px;
+}
+
+.jrgallery_update_button {
+    font-size: 10px;
+    width: 60px;
+    margin: 2px;
+}
+
+.jrgallery_update_button:hover {
+    cursor: pointer;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    .jr_gallery_row {
+        width: 90%;
+    }
+}
+
+.jrgallery_image_grid {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    margin: 6px 0;
+}
+
+#gallery-edit-image {
+    width: 400px;
+}
+
+#gallery-save-image {
+    display: none;
+    width: 75%;
+    padding: 12px;
+    margin-bottom: 12px;
+    color: #000000;
+    border-radius: 3px;
+}

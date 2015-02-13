@@ -1,0 +1,103 @@
+.page_notice_drop {
+    background:#0A0A0A;
+}
+/* @title Form Message Box */
+/* @help Form messages will be displayed withing the Form Message box */
+.page_notice {
+    text-align:center;
+    padding:10px;
+    margin:12px;
+    font-size:14px;
+}
+/* @title Form Message Text */
+/* @help Formats the message text as shown in the Form Message Box */
+.form_notice {
+    text-align:center;
+    padding:10px;
+    display:none;
+}
+
+/* @title Form Notice */
+/* @help Background color of Form Notice messages */
+.notice {
+    background-color:#C90;
+    color:#000;
+    border:1px solid #282828;
+}
+
+/* @title Form Notice Link */
+/* @help Link color of Form Notice messages */
+.notice a{
+    color:#000;
+    text-decoration: underline;
+}
+
+/* @title Form Warning */
+/* @help Background color of Form Warning messages */
+.warning {
+    background-color:#BA4B0D;
+    color:#000;
+    border-radius: 4px;
+}
+
+/* @title Form Error */
+/* @help Background color of Form Error messages */
+.error {
+    background-color:#9B1C26;
+    color:#FFFFFF;
+    border-radius: 4px;
+}
+
+/* @title Form Success */
+/* @help Background color of Form Success messages */
+.success {
+    background-color:#006600;
+    color:#CCC;
+    border-radius: 4px;
+}
+
+/* @title Comment Success */
+/* @help Background color of Comment Success messages */
+.comment_success {
+    background-color:#006600;
+    color:#CCC;
+    padding:6px;
+    padding-left:12px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    margin:12px;
+}
+
+/* @title Comment Error */
+/* @help Background color of Comment Error messages */
+.comment_notice {
+    background-color:#9B1C26;
+    color:#FFFFFF;
+    padding:6px;
+    padding-left:12px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    margin-bottom:6px;
+}
+/* @title Field Error */
+/* @help Background color of a form field if the contents are in error */
+.field-hilight {
+    background-color: rgba(255, 187, 0, 0.25);
+    color:#222;
+}
+.qq-upload-list li.qq-upload-success {
+    margin:6px 2px;
+    background-color:#006600;
+    color: #FFFFFF;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+.qq-upload-list li.qq-upload-fail {
+    margin:6px 2px;
+    background-color:#CC0000;
+    color: #FFFFFF;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}

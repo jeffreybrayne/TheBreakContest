@@ -1,0 +1,33 @@
+.bullet-list {background: url("{$jrMediaPro_img_url}/bullet_set.png") no-repeat 0 4px; padding-left: 14px;}
+.bullet-list:hover {background: url("{$jrMediaPro_img_url}/bullet_set.png") no-repeat 0 -13px;}
+
+.bullet-toggle {background: url("{$jrMediaPro_img_url}/bullet_toggle_set.gif") no-repeat 0 0; padding-left: 15px;}
+.bullet-toggle:hover {background: url("{$jrMediaPro_img_url}/bullet_toggle_set.gif") no-repeat 0 -15px; padding-left: 15px;}
+
+.button-play {background: url("{$jrMediaPro_img_url}/button_player_set.png") no-repeat 0 0; height:20px; width:20px;}
+.button-play:hover {background: url("{$jrMediaPro_img_url}/button_player_set.png") no-repeat 0 -20px;}
+.button-playing {background: url("{$jrMediaPro_img_url}/button_player_set.png") no-repeat 0 -40px; height:20px; width:20px;}
+
+.button-more {background: url("{$jrMediaPro_img_url}/button_more_set.png") no-repeat 0 0; height:16px; width:47px;}
+.button-more:hover {background: url("{$jrMediaPro_img_url}/button_more_set.png") no-repeat 0 -17px;}
+
+.button-toggle {
+    background: url("{$jrMediaPro_img_url}/button_toggle_set.png") no-repeat 0 0;
+    height:12px;
+    width:108px;
+    margin-left:8px;
+    margin-bottom:-10px;
+    margin-top:0;
+}
+.button-toggle:hover {background: url("{$jrMediaPro_img_url}/button_toggle_set.png") no-repeat 0 -13px;}
+
+.button-arrow-next {background: url("{$jrMediaPro_img_url}/button_arrow_set.png") no-repeat 0 0; height:14px; width:25px; padding-left:25px;font-size:12px;}
+.button-arrow-next:hover {background: url("{$jrMediaPro_img_url}/button_arrow_set.png") no-repeat 0 -15px; height:14px; padding-left:25px;font-size:12px;}
+.button-arrow-next-off {background: url("{$jrMediaPro_img_url}/button_arrow_set.png") no-repeat 0 -30px; height:14px; padding-left:25px;font-size:12px;}
+.button-arrow-previous {background: url("{$jrMediaPro_img_url}/button_arrow_set.png") no-repeat 0 -45px; height:14px; padding-left:25px;font-size:12px;}
+.button-arrow-previous:hover {background: url("{$jrMediaPro_img_url}/button_arrow_set.png") no-repeat 0 -60px; height:14px; padding-left:25px;font-size:12px;}
+.button-arrow-previous-off {background: url("{$jrMediaPro_img_url}/button_arrow_set.png") no-repeat 0 -75px; height:14px; padding-left:25px;font-size:12px;}
+
+.button-fav {background: url("{$jrMediaPro_img_url}/button_fav_set.png") no-repeat 0 0; padding-left:22px;}
+.button-fav:hover {background: url("{$jrMediaPro_img_url}/button_fav_set.png") no-repeat 0 -17px;}
+

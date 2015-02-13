@@ -1,0 +1,123 @@
+/* @title Tables */
+/* @help This is the HTML table style */
+table {
+    width:100%;
+    border-width:0;
+    border-spacing:0;
+}
+
+/* @title Table TD */
+/* @help This is the TD tag for tables */
+td, th {
+    padding:0;
+}
+
+/* @title Table Links */
+/* @help This is the color for URL links in a table */
+td a {
+    color:#0099FF;
+}
+
+/* @title Page Table */
+/* @help This is the page table style */
+.page_table {
+    border-spacing:1px;
+    background-color:#0A0A0A;
+    width:100%;
+    margin-bottom:12px;
+}
+
+/* @title Page Table Header */
+/* @help This is the page header table style */
+.page_table_header {
+    background-color:#040505;
+    text-align:center;
+    padding:6px;
+    font-size:12px;
+    text-transform:capitalize;
+    color:#CCC;
+    white-space:nowrap;
+}
+
+/* @title Page Table Row */
+/* @help This is the page row table style */
+.page_table_row {
+    background-color: #040505;
+}
+
+/* @title Table Row Alt */
+/* @help This is the alternate page row table style */
+.page_table_row_alt {
+    background-color:#111;
+}
+
+/* @title Page Table Cell */
+/* @help This is the page table cell style */
+.page_table_cell {
+    padding:5px;
+    font-size:12px;
+    color:#CCC;
+}
+.page_table_cell a {
+    color:#0099FF;
+    text-decoration:none;
+}
+.page_table_cell a:hover {
+    color:#FF9900;
+    text-decoration:none;
+}
+
+/* @title Page Table Pager */
+/* @help This is the page pagination table style */
+.page_table_pager {
+	background-color:transparent;
+}
+
+/* @title Page Pager Left */
+/* @help This is the left pagination cell */
+.page_table_pager_left {
+    width:25%;
+    padding:5px;
+}
+
+/* @title Page Pager Center */
+/* @help This is the center pagination cell */
+.page_table_pager_center {
+    text-align:center;
+    width:50%;
+    padding:5px;
+    font-size:12px;
+    color:#CCC;
+}
+
+/* @title Page Pager Right */
+/* @help This is the right pagination cell */
+.page_table_pager_right {
+    text-align:right;
+    width:25%;
+    padding:5px;
+}
+
+/* @title Page Pager Jumper */
+/* @help This is the page selection drop down */
+.page_table_jumper {
+    width:50px;
+}
+.page-table-jumper {
+    color:#666;
+    font-size:14px;
+    padding:3px; /* @ignore */
+    margin:2px; /* @ignore */
+    background-color:#111;
+    border-width:1px;
+    border-style:solid;
+    border-color:#282828;
+    border-radius:0;
+}
+/* @title Page Notice */
+/* @help This is the page notice section */
+.page_table_notice {
+    text-align:center;
+    line-height:32px;
+    font-size:14px;
+}

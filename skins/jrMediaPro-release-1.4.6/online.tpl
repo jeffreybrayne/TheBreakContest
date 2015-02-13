@@ -1,0 +1,1 @@
+{jrUser_whos_online template="whos_online.tpl"}

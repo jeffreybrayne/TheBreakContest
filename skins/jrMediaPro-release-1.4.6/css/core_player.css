@@ -1,0 +1,158 @@
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.happyworm.com/jquery/jplayer
+ *
+ * Skin Name: Blue Monday
+ *
+ * Copyright (c) 2010-2011 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Silvia Benvenuti
+ * Skin Version: 4.0 (jPlayer 2.1.0)
+ * Date: 1st September 2011
+ */
+
+.media_blue_monday_player a.jp-play {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 0 no-repeat;
+}
+.media_blue_monday_player a.jp-play:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -41px 0 no-repeat;
+}
+.media_blue_monday_player a.jp-pause {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -42px no-repeat;
+    display: none;
+}
+.media_blue_monday_player a.jp-pause:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -41px -42px no-repeat;
+}
+
+.media_blue_monday_player a.jp-stop {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -83px no-repeat;
+    margin-left:10px;
+}
+
+.media_blue_monday_player a.jp-stop:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -29px -83px no-repeat;
+}
+
+.media_blue_monday_player a.jp-previous {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -112px no-repeat;
+}
+.media_blue_monday_player a.jp-previous:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -29px -112px no-repeat;
+}
+
+.media_blue_monday_player a.jp-next {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -141px no-repeat;
+}
+.media_blue_monday_player a.jp-next:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -29px -141px no-repeat;
+}
+
+.media_blue_monday_player div.jp-seek-bar {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -202px repeat-x;
+    width:0;
+    height:100%;
+    cursor: pointer;
+}
+.media_blue_monday_player div.jp-play-bar {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -218px repeat-x ;
+    width:0;
+    height:100%;
+}
+.media_blue_monday_player a.jp-mute {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -170px no-repeat;
+}
+.media_blue_monday_player a.jp-mute:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -19px -170px no-repeat;
+}
+.media_blue_monday_player a.jp-unmute {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -60px -170px no-repeat;
+    display: none;
+}
+.media_blue_monday_player a.jp-unmute:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -79px -170px no-repeat;
+}
+
+.media_blue_monday_player a.jp-volume-max {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -186px no-repeat;
+}
+.media_blue_monday_player a.jp-volume-max:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -19px -186px no-repeat;
+}
+
+.media_blue_monday_player div.jp-volume-bar {
+    position: absolute;
+    overflow:hidden;
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -250px repeat-x;
+    width:46px;
+    height:5px;
+    cursor: pointer;
+}
+.media_blue_monday_player div.jp-audio div.jp-volume-bar {
+    top:37px;
+    left:330px;
+}
+.media_blue_monday_player div.jp-video div.jp-volume-bar {
+    top:17px;
+    left:72px;
+}
+.media_blue_monday_player div.jp-volume-bar-value {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -256px repeat-x;
+    width:0;
+    height:5px;
+}
+
+.media_blue_monday_player a.jp-full-screen {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -310px no-repeat;
+    margin-left: 20px;
+}
+
+.media_blue_monday_player a.jp-full-screen:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -30px -310px no-repeat;
+}
+
+.media_blue_monday_player a.jp-restore-screen {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -60px -310px no-repeat;
+    margin-left: 20px;
+}
+
+.media_blue_monday_player a.jp-restore-screen:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -90px -310px no-repeat;
+}
+
+.media_blue_monday_player a.jp-repeat {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -290px no-repeat;
+}
+
+.media_blue_monday_player a.jp-repeat:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -30px -290px no-repeat;
+}
+
+.media_blue_monday_player a.jp-repeat-off {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -60px -290px no-repeat;
+}
+
+.media_blue_monday_player a.jp-repeat-off:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -90px -290px no-repeat;
+}
+
+.media_blue_monday_player a.jp-shuffle {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") 0 -270px no-repeat;
+    margin-left: 5px;
+}
+
+.media_blue_monday_player a.jp-shuffle:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -30px -270px no-repeat;
+}
+
+.media_blue_monday_player a.jp-shuffle-off {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -60px -270px no-repeat;
+    margin-left: 5px;
+}
+
+.media_blue_monday_player a.jp-shuffle-off:hover {
+    background: url("{$jrMediaPro_img_url}/jplayer.blue.monday.jpg") -90px -270px no-repeat;
+}

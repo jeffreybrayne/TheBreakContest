@@ -1,0 +1,137 @@
+/*
+ * Jamroom 5 ProJam Light CSS
+ * Copyright 2003-2011 by Talldude Networks, LLC.
+ * @author Brian Johnson - brian@talldude.net
+ */
+
+/* @title Item Box */
+/* @help This is the item container */
+.doc_item {
+    background-color:#F0F0F0;
+    padding:12px;
+    margin:12px auto;
+    border-radius:0;
+    border:0;
+    color:#222;
+}
+/* @title New Section */
+/* @help This is the popup for a new section */
+.new_section_box {
+    position:inherit;
+    width:400px;
+    text-align:left;
+    background-color:#FFF;
+    color:#222;
+    border:2px solid #AAA;
+    border-radius:0;
+    padding:12px;
+    display:none;
+    z-index:10000;
+    overflow:visible;
+}
+/* @title Table Of Content */
+/* @help This is the table of content section */
+.doc_toc {
+    background:#FFF;
+    margin:12px;
+    padding:12px;
+    border:0;
+    border-radius:0;
+    color:#000;
+}
+/* @title Table Of Content Link */
+/* @help This is the table of content link text */
+.doc_toc a {
+    color:#0099FF;
+    text-decoration:none;
+    cursor:pointer;
+}
+.doc_toc a:hover {
+    color:#FF9900;
+    text-decoration:none;
+}
+/* @title Section Text */
+/* @help This is the main text */
+.section_text {
+    position:relative;
+    clear:both;
+    overflow:visible;
+    padding:12px;
+    margin-bottom:12px;
+    color:#222;
+}
+
+/* @title Warning Section */
+/* @help This is the warning section */
+.section_warning {
+    background:#BA4B0D;
+    border:0;
+    border-radius:0;
+    margin:12px;
+    color:#000;
+}
+
+/* @title Hint Section */
+/* @help This is the hint section */
+.section_hint {
+    background:#333;
+    border:0;
+    border-radius:0;
+    margin:12px;
+    color:#DDD;
+}
+/* @title File Section */
+/* @help This is the file section */
+.section_file {
+    background-color:#DDD;
+    border:1px solid #333;
+    border-radius:0;
+    margin-bottom:12px;
+    color:#000;
+}
+
+/* @title Function Section */
+/* @help This is the function section */
+.section_function {
+    background:#DDD;
+    margin-bottom:20px;
+    display:table;
+    width:100%;
+    font-size:14px;
+    border:1px solid #333;
+    border-radius:0;
+    color:#000;
+}
+/* @title Header Cell */
+/* @help This is the header cell section */
+.section_header_cell {
+    background:#333;
+    display:table-cell;
+    padding:12px;
+    color:#CCC;
+}
+/* @title Function Title */
+/* @help This is the function title section */
+.section_function_title {
+    background:#FFF;
+    padding:12px;
+    font-family:monospace;
+    border:1px solid #333;
+    border-radius:0;
+    color:#222;
+}
+.new_section_button {
+    text-align:center;
+    width:100%;
+    opacity:0.2;
+    text-transform:capitalize;
+    padding:3px 0;
+}
+
+.new_section_button:hover {
+    opacity:1;
+}
+.new_section_button a:hover {
+    text-decoration:none;
+}
+

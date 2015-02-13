@@ -1,0 +1,190 @@
+/*! http://responsiveslides.com v1.32 by @viljamis */
+
+#swrapper {
+    padding: 26px 0 20px 0;
+    margin: 0 auto;
+}
+
+/* @title Slider Background */
+/* @help Background for the index image slider */
+.rslides {
+    background-color: #000000;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    height: 388px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 388px;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 auto;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    margin: 0 auto;
+}
+
+h3, h4, pre {
+    text-align: left;
+    max-width: 512px;
+    margin: 0 auto 20px;
+}
+
+.rslides {
+    margin: 0 auto;
+}
+
+#slider2 {
+    box-shadow: none;
+    margin: 0 auto;
+}
+
+/* @title Slider Image Tab */
+/* @help Each image is on it's own Tab - this controls the tab style */
+.rslides_tabs {
+    background-color: #EEEEEE;
+    list-style: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rslides_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 1px;
+}
+
+/* @title Slider Tab Link */
+/* @help Each image has a link to the profile - this controls the URL link */
+.rslides_tabs a {
+    width: auto; /* @ignore */
+    line-height: 20px;
+    padding: 3px 5px; /* @ignore */
+    height: auto; /* @ignore */
+    background: transparent;
+    display: inline;
+    color: #000000;
+}
+
+.rslides_tabs li:first-child {
+    margin-left: 0;
+}
+
+.rslides_tabs .rslides_here a {
+    background: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Callback example */
+
+h3 {
+    line-height: 14px;
+    font-size: 14px;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+}
+
+.events {
+    list-style: none;
+}
+
+.callbacks_container {
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.callbacks {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.callbacks li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.callbacks img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+
+.callbacks .caption {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    text-shadow: none;
+    color: #FFFFFF;
+    background: #000000;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: none;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #EEEEEE;
+}
+
+.callbacks_nav {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    opacity: 0.5;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url("{$jrElastic_img_url}/themes.gif") no-repeat left top;
+    margin-top: -45px;
+}
+
+.callbacks_nav:active {
+    opacity: 1.0;
+}
+
+.callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}

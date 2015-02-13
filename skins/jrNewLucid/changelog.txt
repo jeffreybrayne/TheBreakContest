@@ -1,0 +1,29 @@
+Lucid Skin changelog
+
+Version 1.0.4:
+ - Bug Fix: Fixed the menu button to be on the same line as the logo image and still work on mobile devices.
+
+Version 1.0.3:
+ - Update: Updated slide menu to new version
+ - Moved logo down on mobile view.
+ - Template Files Modified:
+   ------------------------------------------------------
+    header.tpl          footer.tpl
+   ------------------------------------------------------
+ - New Version of Javascript file:
+   ------------------------------------------------------
+    contrib/slidebars/slidebars.min.js
+   ------------------------------------------------------
+
+Version 1.0.2:
+ - Added: Profile custom logo support
+ - Template Files Modified:
+   ------------------------------------------------------
+    header.tpl
+   ------------------------------------------------------
+
+Version 1.0.1:
+ - Fix: Fixed recently rated box on the profile page
+
+Version 1.0.0:
+ - Initial Release

@@ -1,0 +1,7 @@
+Graph Support module change log
+
+Version 1.0.1:
+ - Bug Fix: Some graphs could be off by 1 day
+
+Version 1.0.0:
+ - Initial release

@@ -1,0 +1,147 @@
+User Profiles module changelog
+
+Version 1.2.3:
+ - Bug Fix: jrProfile_change_to_profile() not always including all profile keys in session
+
+Version 1.2.2:
+ - New: "item_module_tabs" event trigger fired when creating tabs for a module profile index
+
+Version 1.2.1:
+ - Bug Fix: Power User profile creation may not work correctly based on quota used in new profiles
+
+Version 1.2.0:
+ - New: System Check listener that checks for /usr/bin/du support for disk usage
+ - New: "profile_id" jrCore_list parameter support now works with all DataStore modules
+
+Version 1.1.36:
+ - Change: Additional language strings that were hard coded have been moved to the Language tab
+
+Version 1.1.35:
+ - Change: "Allow Quota Changes" only shows to users with a profile in a non-subscription quota
+
+Version 1.1.34:
+ - New: "Allow Quota Changes" global config option to enable/disabled user quota changes
+
+Version 1.1.33:
+ - New: Profile Quota select field on Profile Settings if more than 1 Signup Quota is configured
+ - New: Search box on Profile index page to search only Profiles
+ - New: Missing language strings added in to Language tab
+
+Version 1.1.32:
+ - New: {jrProfile_disable_sidebar} template function to disable profile sidebar (in supported skins)
+ - New: "item_list_view" and "item_index_view" event triggers
+
+Version 1.1.31:
+ - Bug Fix: jrProfile_change_to_profile() may not set user information properly
+
+Version 1.1.30:
+ - Bug Fix: Quota Browser updated to support forum button encoding provided by the Core
+
+Version 1.1.29:
+ - Change: Additional caching added for quota related functions
+
+Version 1.1.28:
+ - Bug Fix: module profile pages were not showing the page title - can now be updated with {jrCore_page_title}
+
+Version 1.1.27:
+ - New: "Profile Active" checkbox on Profile Settings page to activate/deactivate the profile
+ - Bug Fix: profile_updated / profile_created values in jrCore_list calls had their values swapped
+
+Version 1.1.26:
+ - Bug Fix: Quota variables not appearing in a jrCore_list for the jrProfile module
+
+Version 1.1.25:
+ - Change: profile_option.tpl now uses "block" class instead of inline style of "margin:12px"
+
+Version 1.1.24:
+ - Bug Fix: Invalid Quota ID error showing to Power Users when modifying profile
+
+Version 1.1.23:
+ - Change: Profile Quota selector will no longer show if only 1 Quota is allowed for a Power User
+ - Bug Fix: 'Create Profile' button showing in Settings to Power Users after Power User disabled in Quota
+ - New: Message on Create Profile screen for Power Users showing how many profiles they can create
+
+Version 1.1.22:
+ - New: Support for new Custom Dashboard panels in Jamroom Core 5.2+
+
+Version 1.1.21:
+ - Bug Fix: Profile URLs with an invalid module name could cause a CRI SQL error in some circumstances
+
+Version 1.1.20:
+ - Bug Fix: Profiles with more than 1 linked User Account not showing extra user names in Profile Browser
+
+Version 1.1.19:
+ - Bug Fix: jrCore_list searches for secondary profile keys not working with values with spaces in them
+
+Version 1.1.18:
+ - Change: Registered new profile_delete event fired when a profile and its data are deleted
+
+Version 1.1.17:
+ - Bug Fix: 404 not found on some item detail pages when item actually exists
+
+Version 1.1.16:
+ - Change: Updated to use lightbox2 instead of lightbox
+
+Version 1.1.15
+ - Change: Requests to a profile page for an item that has been deleted now shows item index instead of 404 not found
+ - Bug Fix: Signups to newly created quota not increasing profile_counts key for Quota
+
+Version 1.1.14:
+ - Bug Fix: Profile Counts not being set to 0 if no more profiles in quota
+
+Version 1.1.13:
+ - Bug Fix: Profile Counts in Quota Browser showing "1" instead of correct profile count
+
+Version 1.1.12:
+ - Change: Profile pages are now more fully cached for logged out users
+ - Bug Fix: profile privacy not showing correctly if admin modified profiles from Profile Browser
+
+Version 1.1.11:
+ - New: Links to profile items after a profile name change now work (and return a 301 Moved Permanently)
+ - New: "profile_menu_params" event fired during profile menu creation
+
+Version 1.1.10:
+ - Bug Fix: Profiles linked to more than 1 account passed incorrect user_id on account tabs
+ - Bug Fix: Link User Accounts tool was showing "1" by default in User Name live search input
+
+Version 1.1.9:
+ - Bug Fix: modifying profile with no attached user account may result in bad profile_id
+
+Version 1.1.8:
+ - New: back to profile button in the profile settings header
+ - New: When admin is modifying a profile that is not their own, a message is shown
+
+Version 1.1.7:
+ - Bug Fix: modifing a profile as master admin may get incorrect user_id for account tab
+
+Version 1.1.6:
+ - Bug Fix: profile URLs were not showing correctly for profiles with UTF-8 encoded characters in their name
+
+Version 1.1.5:
+ - Bug Fix: power users creating profiles triggers duplicate key database error
+
+Version 1.1.4:
+ - New: "logged_in" flag supported in "group" option for profile_tab registered module feature
+ - New: Update so profile variables are now available in the profile menu template
+ - Bug Fix: searching the profile browser for numeric values would return more than were actually matched
+
+Version 1.1.3:
+ - New: changes to support variable items per page in Data Browser
+
+Version 1.1.2:
+ - Deleting a profile in the Data Browser now returns you to the Data Browser instead of the site index
+
+Version 1.1.1:
+ - Removed second level of profile page caching to give modules and templates better cache control
+
+Version 1.1.0:
+ - New "item_detail_view" event trigger
+ - New "quota_check" and "include_jrProfile_keys" jrCore_db_search_items parameter support.
+ - New "Default Profile Privacy" and "Allow Privacy Changes" Quota settings.
+ - Bug Fix: User profile module was not showing in Module Jumper in Quota Config.
+ - Bug Fix: Lists may have included items that had been disabled in Profile Quotas.
+ - Bug Fix: Profile Stats will no longer show stats for modules not allowed in the Profile Quota.
+ - Bug Fix: Quota info was not being included in jrCore_list calls for the jrProfile module.
+
+Version 1.0.0
+ - Initial release

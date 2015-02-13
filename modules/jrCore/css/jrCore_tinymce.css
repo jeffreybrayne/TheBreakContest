@@ -1,0 +1,13 @@
+/* @title TinyMCE Editor Body */
+/* @help Controls the height of the TinyMCE editor */
+#form-editor-body {
+    height: 100%;
+}
+
+/* @title TinyMCE Editor */
+/* @help Controls the font in the TinyMCE editor */
+.mce-content-body {
+    font-family:'Open Sans',Tahoma,sans-serif;
+    font-size: 14px;
+    color: #000000;
+}

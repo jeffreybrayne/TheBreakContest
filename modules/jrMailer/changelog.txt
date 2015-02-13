@@ -1,0 +1,17 @@
+Email Support module changelog
+
+Version 1.2.1:
+ - Change: HTML detection changed to look for opening <html> tag in message body
+
+Version 1.2.0:
+ - New: "Max Send Rate" Global config for limiting the number of emails sent per minute
+ - Change: If HTML is detected in message body, email will be sent as an HTML email
+ - Change: Updated bundled SwiftMailer to version 5.3.1
+
+Version 1.1.0:
+ - New: Enabled SSL/TLS config option for enabling SMTP over SSL/TLS
+ - New: Test Email tool for testing Mailer Configuration and sending test emails
+ - Change: SMTP Password field in Global Config is now a password field instead of text
+
+Version 1.0.0:
+ - Initial release

@@ -1,0 +1,124 @@
+/*
+ * Jamroom 5 MediaPro CSS
+ * Copyright 2003-2011 by Talldude Networks, LLC.
+ * @author Brian Johnson - brian@talldude.net
+ */
+
+/* @title Page Background */
+/* @help This is the main background for the site */
+html {
+    background-color:#000;
+    padding:0;
+    margin:0 auto;
+}
+
+/* @title Body */
+/* @help This is the main style for the body of the page */
+body {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    background-color: #000;
+    font-size:12px;
+    color:#ccc;
+    padding:0;
+    margin:0;
+}
+
+/* @title Text Links */
+/* @help Text URL links */
+a {
+    color:#0099FF;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* @title Text Link Hover */
+/* @help Text URL Hover */
+a:hover {
+    color: #FF9900;
+    text-decoration:none;
+}
+
+p {
+    margin:0 0 10px 0;
+}
+
+/* @title Heading 1 */
+/* @help Heading Text size 24px  */
+h1 {
+    font-size:24px;
+    text-transform:capitalize;
+    display:inline;
+    padding:0;
+    margin:0;
+}
+
+/* @title Heading 2 */
+/* @help Heading Text size 18px  */
+h2 {
+    font-size:18px;
+    text-transform:capitalize;
+    display:inline;
+    padding:0;
+    margin:0;
+}
+
+/* @title Heading 3 */
+/* @help Heading Text size 14px  */
+h3 {
+    font-size:12px;
+    text-transform:capitalize;
+    display:inline;
+    padding:0;
+    margin:0;
+    font-weight:bold;
+}
+
+/* @title Heading 4 */
+/* @help Heading Text size 12px  */
+h4 {
+    font-size:12px;
+    text-transform:capitalize;
+    display:inline;
+    padding:0;
+    margin:0;
+}
+/* @title Heading 5 */
+/* @help Heading Text size 10px  */
+h5 {
+    font-size:11px;
+    text-transform:capitalize;
+    display:inline;
+    padding:0;
+    margin:0;
+}
+/* @title Heading 6 */
+/* @help Heading Text size 8px  */
+h6 {
+    font-size:10px;
+    text-transform:capitalize;
+    display:inline;
+    padding:0;
+    margin:0;
+}
+hr {
+    border:0;
+    height:1px;
+    background:#ccc;
+}
+/* @title Breadcrumb */
+/* @help The size of the navigation links under the headings  */
+.breadcrumbs{
+    font-size: 11px;
+    color: #9F3;
+    text-transform:capitalize;
+}
+/* @title Breadcrumb link-color */
+/* @help The color of the links in the breadcrumb navigation  */
+.breadcrumbs a{
+    color: #0099ff;
+    text-decoration:none;
+}
+.breadcrumbs a:hover{
+    color: #FF9900;
+    text-decoration:none;
+}

@@ -1,0 +1,99 @@
+.bigtable {
+    background: #FFFFFF !important;
+}
+
+.bigtable th {
+    position: relative;
+}
+
+/* @title Dashboard Panel Box */
+/* @help When viewing the dashboard this controls the box the numbers appear in */
+.bignum {
+    background: #333333;
+    text-align: center;
+    font-size: 42px !important;
+    line-height: 42px;
+    padding: 12px !important;
+    height: 64px;
+    -moz-box-shadow: inset 0 1px 3px #000000;
+    -webkit-box-shadow: inset 0 1px 3px #000000;
+    box-shadow: inset 0 1px 3px #000000;
+    cursor: pointer;
+}
+
+/* @title Panel Color 1 */
+/* @help Controls the font color for the first column in the dashboard */
+.bignum1 {
+    color: #FFCC00 !important;
+}
+
+/* @title Panel Color 2 */
+/* @help Controls the font color for the second column in the dashboard */
+.bignum2 {
+    color: #FF9933 !important;
+}
+
+/* @title Panel Color 3 */
+/* @help Controls the font color for the third column in the dashboard */
+.bignum3 {
+    color: #66CC66 !important;
+}
+
+/* @title Panel Color 4 */
+/* @help Controls the font color for the fourth column in the dashboard */
+.bignum4 {
+    color: #0099FF !important;
+}
+
+/* @title Panel Color 5 */
+/* @help Controls the font color for the fifth column in the dashboard */
+.bignum5 {
+    color: #33CCCC !important;
+}
+
+.bignum span {
+    display: block;
+    font-size: 11px !important;
+    line-height: 11px;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.bignum_stat_cell {
+    position: relative;
+}
+
+.bignum_stat {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bigsystem {
+    text-align: left;
+}
+
+.bigsystem-inf {
+    color: #FFFFFF !important;
+}
+
+.bigsystem-min {
+    background-color: #FFCC00 !important;
+    color: #000000 !important;
+}
+
+.bigsystem-maj {
+    background-color: #FF9900 !important;
+    color: #000000 !important;
+}
+
+.bigsystem-cri {
+    background-color: #FF6600 !important;
+    color: #000000 !important;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    .bignum {
+        font-size: 28px !important;
+    }
+}

@@ -1,0 +1,140 @@
+User Accounts module changelog
+
+Version 1.5.0:
+ - New: "Re-Athenticate" Global Setting to force entering old password on password and email changes
+ - New: "Email Change Notice" Global Setting sends an email to the old email address on email change
+ - New: "New Device Notice" Quota Config option for notifying users when logged in on new device
+ - New: 7, 30, 60 and 90 day options added to "Auto Login Reset" Global Setting
+ - Change: Global Options form layout updated to better group config options
+ - Change: Successfully updating User Account settings no longer redirects to User Profile
+ - Bug Fix: User Group select field may not always show on User Account form for Master Admin
+
+Version 1.4.1:
+ - Bug Fix: jrUser_notify in a loop may skip email notifications in some situations
+
+Version 1.4.0:
+ - New: "Site Privacy" Global Config option added for creating a public/private site
+
+Version 1.3.5:
+ - Change: Updated Account Settings form so Master Admin options show properly at bottom
+ - Bug Fix: jrUser_session_is_valid_session() was always returning false
+
+Version 1.3.4:
+ - Bug Fix: Users Online dashboard panel would sometimes show blank
+
+Version 1.3.3:
+ - Bug Fix: New language strings from updated modules and skins not being added to Cloned languages
+
+Version 1.3.2:
+ - Bug Fix: skip_session support not working correctly for views named the same in different modules
+
+Version 1.3.1:
+ - Bug Fix: Custom form fields on signup page not being saved properly to the User DataStore
+
+Version 1.3.0:
+ - New: "Clone Language" tool updated to update exiting languages with new module and skin Language Strings
+
+Version 1.2.9:
+ - Bug Fix: user_updated / user_created values in jrCore_list calls had their values swapped
+
+Version 1.2.8
+ - New: Ability to "undo" block all notifications when clicking on an unsubscribe link from an email footer
+ - Change: User session is now synced before any quota limit check is performed
+
+Version 1.2.7:
+ - New: Signup email address is now checked for Banned email/domain if Banned Items module is installed
+
+Version 1.2.6:
+ - Bug Fix: Login was broken after the 1.2.5 release
+
+Version 1.2.5:
+ - Change: URL history mechanism updated to handle session changes better
+
+Version 1.2.4:
+ - Bug Fix: invalid user_id in account tabs not loading viewing user information correctly
+ - Bug Fix: Create New User Account not redirecting to proper profile_id when Create Profile is checked
+
+Version 1.2.3:
+ - New: "Create User Profile" checkbox in Create User form to skip creating profile for new account (for linking to existing profile)
+
+Version 1.2.2:
+ - Bug Fix: Modify Account with linked profiles could unlink a user's home profile from their account
+
+Version 1.2.1:
+ - New: "Admin Validation" signup method support for allowing users to signup with admin validation
+ - New: "Reset Language Strings" tool for resetting the language strings for a specific module or skin
+ - Change: only language strings for active skin are loaded
+
+version 1.2.0:
+ - New: "Delete" button in User Browser to only delete the User Account (and not the linked Profile)
+ - New: "delete_user" event trigger fired when a user account is deleted
+
+Version 1.1.16:
+ - Bug Fix: URLs created for the Banned Items module to ban an IP Address were not correct
+ - Bug Fix: registered module Accounts Tabs could still show even if module was not allowed in Quota
+
+Version 1.1.15:
+ - Bug Fix: Default Language setting not working properly for first time site visitors
+
+Version 1.1.14:
+ - Bug Fix: radio selections on notifications account tab may not show properly
+ - Bug Fix: "login_success" event not being fired on succesful login using "Remember Me" cookie
+
+Version 1.1.13:
+ - New: "account_tabs" event fired when a user is viewing their Account Settings section
+ - Change: online_status now cached for up to 15 seconds to improve performance
+ - Change: very long user action lines in Whos Online will now be wrapped
+ - Bug Fix: Language selection from Skin template may not "stick"
+
+Version 1.1.12:
+ - New: Profiles linked to more than 1 user account now show a User Account jumper in account settings
+ - Bug Fix: Profiles linked to more than 1 account passed incorrect user_id on account tabs
+
+Version 1.1.11:
+ - New: When admin is modifying tweaks for another profile, a message is shown
+
+Version 1.1.10
+ - Bug Fix: Whos Online not lined up correctly if Banned Items module not installed
+
+Version 1.1.9
+ - Bug Fix: logged out users not being shown the default system language.
+
+Version 1.1.8:
+ - Bug Fix: jrUser_reset_cache() was not working with user_id 0 to clear non-logged-in users cache
+
+Version 1.1.7:
+ - Bug Fix: searching the user browser for numeric values would return more than were actually matched
+ - Bug Fix: jrUser_notify() for email option now returns bool false on invalid email address
+
+Version 1.1.6:
+ - New: changes to support variable items per page in Data Browser
+
+Version 1.1.5:
+ - User Data Browser now searches all user fields by default
+
+Version 1.1.4
+ - Bug Fix: Default Profile Quota now properly used on signup page if there is more than one signup quota
+
+Version 1.1.3:
+ - Whos Online now shows logged in users first, with visitors last
+ - Known web crawlers/spiders/bots no longer show in Who's Online or Online counts
+
+Version 1.1.2:
+ - Bug Fix: Language Jumper in skin ACP is resetting to module view
+ - Users Online template updated to link with users profile for multi user profiles
+
+Version 1.1.1:
+ - New "Create SSL URLs" config setting to rewrite non-SSL URLs to SSL URLs for logged in users.
+ - If user is already logged in, clicking on login now takes them to their profile.
+ - Bug Fix: On unsusbcribe from all notifications, the users cache is now reset so they see the correct notice.
+
+Version 1.1.0:
+ - New Signup Notification Global Config option for notifying admin users when a new account is created
+ - New Delete Language tool for deleting user languages no longer being used.
+ - Modules registering for notifications can define a custom quota field for showing/not showing in User Notifications section.
+ - Bug Fix: Fixed bug where removing all additional linked profiles from a user account resulted in an SQL error.
+ - Bug Fix: Instant Validation signup method was not working properly
+ - Adding new Changelog
+
+Version 1.0.0:
+ - Initial Release

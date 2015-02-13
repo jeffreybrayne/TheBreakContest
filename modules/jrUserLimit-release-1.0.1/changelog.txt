@@ -1,0 +1,7 @@
+User Daily Limits module changelog
+
+Version 1.0.1:
+ - Bug Fix: Clicking "cancel" on the Quota Limits screen results in an error
+
+Version 1.0.0:
+ - Initial Release
