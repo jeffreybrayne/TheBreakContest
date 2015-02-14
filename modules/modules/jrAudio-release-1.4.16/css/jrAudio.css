@@ -1,0 +1,71 @@
+/* @title Audio Detail Box */
+/* @help This is the box around the Audio Details that is seen on the Update Audio file form. */
+.jraudio_detail {
+    width:65%;
+    padding:10px;
+    margin:0 0 12px 3px;
+    font-size:14px;
+}
+.jraudio_detail_left {
+    width:10%;
+}
+/* @title Audio Details */
+/* @help This is the text area that contains the information about the Audio File. */
+.jraudio_detail_right {
+    width:90%;
+    text-align:left;
+}
+/* @title Audio Detail Labels */
+/* @help This is the small labels that are shown in the Audio Details box */
+.jraudio_title {
+    width:100px;
+    display:inline-block;
+    text-align:right;
+}
+
+.jraudio_detail_player {
+    display:table;
+    width:100%;
+}
+.jraudio_detail_player_left {
+    display:table-cell;
+    width:70%;
+    padding:5px;
+    padding-right:18px;
+    vertical-align:top;
+}
+.jraudio_detail_player_right {
+    display:table-cell;
+    width:30%;
+    padding:5px;
+    vertical-align:top;
+}
+
+.jraudio_list_detail {
+    float:left;
+    margin-left:18px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+
+    .jraudio_detail_player {
+        display:inline;
+    }
+    .jraudio_detail_player_left {
+        display:inline;
+        width:100%;
+    }
+    .jraudio_detail_player_right {
+        display:inline;
+        width:100%;
+    }
+    .jraudio_detail_player_right img {
+        margin-top:12px;
+        width:90%;
+    }
+    .jraudio_list_detail {
+        margin-left:0;
+        margin-top:12px;
+    }
+}
+

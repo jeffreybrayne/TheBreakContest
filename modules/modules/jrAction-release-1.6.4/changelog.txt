@@ -1,0 +1,111 @@
+Activity Stream module changelog
+
+Version 1.6.4:
+ - New: Checkbox for "Share This" to enable/disable sharing to OneAll networks (if configured)
+ - Change: small CSS updates to line up Share Networks section better if editor is enabled
+
+Version 1.6.3:
+ - Bug Fix: HashTag search function could corrupt embedded media items using Javascript
+
+Version 1.6.2:
+ - Bug Fix: OneAll Shared Network icons showing even if OneAll is disabled in the profile's Quota
+
+Version 1.6.1:
+ - Change: Small change to "Add To Timeline" checkbox to ensure corect ordering in a form designer form
+
+Version 1.6.0:
+ - New: Ability to use WYSIWYG Editor in the Post a New Activity Update field
+ - New: Global Config option to set the number of allowed Characters in an Action update
+ - Bug Fix: "Success" message from a new activity post could appear in other module forms
+
+Version 1.5.6:
+ - Bug Fix: Convert # Tags could convert HTML color codes embedded in inline style
+
+Version 1.5.5:
+ - Bug Fix: Modules without registered action listeners could return JSON in the timeline
+
+Version 1.5.4:
+ - New: An action_save listener can cancel Action with "jraction_add_to_timeline" data key set to "off"
+
+Version 1.5.3:
+ - Bug Fix: Fix for incorrect error result function used on a couple views
+
+Version 1.5.2:
+ - Bug Fix: form activity indicator and social network icons not showing if overridden in ACP
+
+Version 1.5.1:
+ - Bug Fix: Comments count on timeline would show even if comments module is not enabled
+
+Version 1.5.0:
+ - Change: Module name changed from "Activity Stream" to "Activity Timeline"
+ - Change: Menu name changed to "Timeline" from "Activity"
+ - Change: Updated item_index.tpl to now contain new Activity Update form
+
+Version 1.4.2:
+ - Change: "Timeline" profile menu entry no longer blocked by being disabled at the module level
+
+Version 1.4.1:
+ - Change: Timeline entries posted from Mentions will refresh to Timeline to see update
+ - Change: Timeline entry detail page now accessed via "comments" link in item list header
+
+Version 1.4.0:
+ - New: Updates to Timeline to include information about "shared" items in the Activity Stream
+ - New: Item Detail pages for Action updates now shows all followers who have shared the update
+
+Version 1.3.2:
+ - New: Activity Indicator added to action form that shows on action submit
+ - Change: Updated bundled underscore.js to version 1.6.0
+
+Version 1.3.1:
+ - Bug Fix: Convert # Tags modifier not working with embedded audio/video players
+
+Version 1.3.0:
+ - New: "Show Add to Timeline" quota config to control display of Add to Timeline checkbox
+ - New: "Convert # Tags" Text Formatter to convert # tags in other modules
+ - Change: Update to action templates to make layout a little cleaner
+
+Version 1.2.1:
+ - Bug Fix: Hashtag linking and searching was not working correctly
+
+Version 1.2.0
+-  Updated templates to use image function for the comment, share and link images instead of an html image tag.
+
+Version 1.1.9
+-  Change added a event to {jrAction_stats} to allow jrFollower to add its own stats.
+
+Version 1.1.8
+-  New "{jrAction_stats}" template function to retreive action count, following count, followers count
+
+Version 1.1.7:
+ - Bug Fix: "Add to Timeline" checkbox showing on forms when actions disabled in quota
+
+Version 1.1.6:
+ - Bug Fix: Sharing actions was not working properly for some actions
+ - Bug Fix: Deleting an action from the action detail page resulted in a page not found
+ - Change: Sharing an action now refreshes to the shared action detail page
+ - Change: minor template updates and tweaks to get things looking better
+
+Version 1.1.5:
+ - Bug Fix: Master and Admin users who rate a profile will have the action show in their home timeline
+
+Version 1.1.4:
+ - Fixed bad user name in Mention email
+ - removed fdebug statements from include.php
+
+Version 1.1.3:
+ - Bug Fix: some module updates were not being saved to the timeline
+
+Version 1.1.2:
+ - Updated timeline pages to include new link to action detail page to allow comments on action entries
+ - Bug Fix: user name variable in "you have been mentioned" notification was not being parsed
+ - Bug Fix: module created action entries were showing raw JSON on action entry detail pages
+
+Version 1.1.1:
+ - New "action_save" event trigger fired before saving action - allows modules to override action save
+
+Version 1.1.0:
+ - All new mentions setup with helper drop down to help find proper mention URL.
+ - Updated templates to always show @user
+
+Version 1.0.1:
+ - Adding new Changelog
