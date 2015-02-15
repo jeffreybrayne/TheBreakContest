@@ -1,7 +1,7 @@
 {jrCore_include template="header.tpl"}
 
 <div class="block">
-
+	<h1>Index</h1>{debug}
     <div class="title">
         <h1>{jrCore_lang module="jbRegister" id="10" default="Register"}</h1>
     </div>

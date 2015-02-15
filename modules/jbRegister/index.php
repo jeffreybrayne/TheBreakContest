@@ -128,6 +128,7 @@ function view_jbRegister_create_save($_post, &$_user, &$_conf)
 //------------------------------
 function view_jbRegister_update($_post, $_user, $_conf)
 {
+	jrCore_notice_page('error', 7);
     // Must be logged in
     jrUser_session_require_login();
     jrUser_check_quota_access('jbRegister');
@@ -262,3 +263,35 @@ function view_jbRegister_delete($_post, $_user, $_conf)
     jrProfile_reset_cache();
     jrCore_form_result('delete_referrer');
 }
+
+//------------------------------
+// set/contest
+//------------------------------
+function view_jbRegister_set($_post, $_user, $_conf)
+{
+    // Must be logged in
+    jrUser_session_require_login();
+    jrUser_check_quota_access('jbRegister');
+	
+	$_uid = $_user['_user_id'];
+	$_profiles = jrProfile_get_user_linked_profiles($_uid);
+	$_profileKeys = array_keys($_profiles);
+	$_pid = $_profileKeys[0];
+	
+    $_data = Array();
+	$_data['profile_paypal_id'] = $_post['id'];
+	$_data['profile_registered'] = true;
+	$_data['profile_quota_id'] = $_post['c'];
+
+    $bid = jrCore_db_update_item('jrProfile', $_pid, $_data);
+    if (!$bid) {
+        jrCore_set_form_notice('error', 12);
+        jrCore_form_result();
+    }
+
+
+    jrCore_form_delete_session();
+    jrProfile_reset_cache();
+	jrCore_form_result("{$_conf['jrCore_base_url']}/{$_user['profile_url']}");
+}
+

@@ -1,5 +1,6 @@
 {jrCore_module_url module="jbRegister" assign="murl"}
 <div class="p5">
+	<h1>Action</h1>
     <span class="action_item_title">
     {if $item['action_mode'] == 'create'}
         {jrCore_lang module="jbRegister" id="11" default="Posted a new register"}:
